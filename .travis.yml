@@ -1,10 +1,5 @@
 language: node_js
 node_js:
-  - 6
+  - 7
 sudo: false
-before_script:
-  - npm run setup
-script:
-  - npm run cover-test
-after_success:
-  - npm run cover-publish
+
