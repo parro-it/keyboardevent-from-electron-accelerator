@@ -36,7 +36,7 @@ git push --set-upstream origin master
 
 # enable travis
 travis sync
-travis enable
+travis enable --no-interactive --repo $package_author/$package_name
 
 # publish skeleton release
 npm version patch
