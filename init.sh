@@ -34,6 +34,10 @@ git add . --all
 git commit -m "$package_name package skeleton"
 git push --set-upstream origin master
 
+# enable travis
+travis sync
+travis enable
+
 # publish skeleton release
 npm version patch
 git push --follow-tags

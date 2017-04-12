@@ -7,17 +7,13 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "example.js"
+    "example.js",
+    "main.js"
   ],
   "scripts": {
-    "xo": "xo --ignore example.js --ignore index.js",
-    "test": "npm run setup --silent && ava && xo --ignore example.js --ignore index.js",
-    "setup": "rollup -f cjs main.js --output index.js",
-    "cover-test": "npm run setup --silent && nyc ava && npm run xo --ignore example.js --ignore index.js",
-    "cover-publish": "nyc report --reporter=text-lcov | coveralls"
+    "test": "rollup -c && ava && xo --ignore example.js --ignore index.js"
   },
   "keywords": [],
-
   "tonicExampleFilename": "example.js",
-  "jsnext:main": "main.js"
+  "module": "main.js"
 }
