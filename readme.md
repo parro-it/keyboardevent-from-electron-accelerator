@@ -20,8 +20,6 @@ This will output
 ```
 
 [![Travis Build Status](https://img.shields.io/travis/$package_author/$package_name/master.svg)](http://travis-ci.org/$package_author/$package_name)
-[![Code Climate](https://img.shields.io/codeclimate/github/$package_author/$package_name.svg)](https://codeclimate.com/github/$package_author/$package_name)
-[![Coverage Status](https://coveralls.io/repos/github/$package_author/$package_name/badge.svg?branch=master)](https://coveralls.io/github/$package_author/$package_name?branch=master)
 [![NPM downloads](https://img.shields.io/npm/dt/$package_name.svg)](https://npmjs.org/package/$package_name)
 
 
