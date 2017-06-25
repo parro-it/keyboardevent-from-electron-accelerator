@@ -1,9 +1,9 @@
 {
-  "name": "$package_name",
+  "name": "keyboardevent-match-electron-accelerator",
   "version": "0.0.0",
-  "description": "$package_description",
-  "repository": "$package_author/$package_name",
-  "author": "$package_author_name <$package_author_email>",
+  "description": "match a DOM KeyboardEvent with an Electron Accelerator string",
+  "repository": "parro-it/keyboardevent-match-electron-accelerator",
+  "author": "Andrea <andrea@parro.it>",
   "license": "MIT",
   "files": [
     "index.js",
@@ -15,5 +15,11 @@
   },
   "keywords": [],
   "tonicExampleFilename": "example.js",
-  "module": "main.js"
+  "module": "main.js",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "documentation": "^4.0.0-rc.1",
+    "rollup": "^0.43.0",
+    "xo": "^0.18.2"
+  }
 }

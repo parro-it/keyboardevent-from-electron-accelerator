@@ -1,4 +1,4 @@
-import $package_var from '$package_name';
+import keyboardeventMatchElectronAccelerator from 'keyboardevent-match-electron-accelerator';
 
-console.log({$package_var});
+console.log({keyboardeventMatchElectronAccelerator});
 
