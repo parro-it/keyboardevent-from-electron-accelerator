@@ -29,6 +29,42 @@ test('handle alt', t => {
 	});
 });
 
+test('handle altgr', t => {
+	const newState = reduceModifier({
+		accelerator: 'altgr+c',
+		event: {}
+	}, 'altgr');
+
+	t.deepEqual(newState, {
+		accelerator: '+c',
+		event: {altKey: true}
+	});
+});
+
+test('handle option', t => {
+	const newState = reduceModifier({
+		accelerator: 'option+c',
+		event: {}
+	}, 'option');
+
+	t.deepEqual(newState, {
+		accelerator: '+c',
+		event: {altKey: true}
+	});
+});
+
+test('handle shift', t => {
+	const newState = reduceModifier({
+		accelerator: 'shift+c',
+		event: {}
+	}, 'shift');
+
+	t.deepEqual(newState, {
+		accelerator: '+c',
+		event: {shiftKey: true}
+	});
+});
+
 test('handle control', t => {
 	const newState = reduceModifier({
 		accelerator: 'control+c',
@@ -72,6 +108,24 @@ test('throw with double command', t => {
 	}, 'command'));
 
 	t.is(err.message, 'Double `Command` modifier specified.');
+});
+
+test('throw with double alt', t => {
+	const err = t.throws(() => reduceModifier({
+		accelerator: 'alt+c',
+		event: {altKey: true}
+	}, 'alt'));
+
+	t.is(err.message, 'Double `Alt` modifier specified.');
+});
+
+test('throw with double shift', t => {
+	const err = t.throws(() => reduceModifier({
+		accelerator: 'shift+c',
+		event: {shiftKey: true}
+	}, 'shift'));
+
+	t.is(err.message, 'Double `Shift` modifier specified.');
 });
 
 test('throw with double control', t => {

@@ -32,6 +32,8 @@ export function reduceModifier({accelerator, event}, modifier) {
 		case 'cmdorctrl': {
 			break;
 		}
+		case 'option':
+		case 'altgr':
 		case 'alt': {
 			if (event.altKey) {
 				throw new Error('Double `Alt` modifier specified.');
@@ -42,14 +44,15 @@ export function reduceModifier({accelerator, event}, modifier) {
 				accelerator: accelerator.slice(modifier.length)
 			};
 		}
-		case 'option': {
-			break;
-		}
-		case 'altgr': {
-			break;
-		}
 		case 'shift': {
-			break;
+			if (event.shiftKey) {
+				throw new Error('Double `Shift` modifier specified.');
+			}
+
+			return {
+				event: Object.assign({}, event, {shiftKey: true}),
+				accelerator: accelerator.slice(modifier.length)
+			};
 		}
 		case 'super': {
 			break;
