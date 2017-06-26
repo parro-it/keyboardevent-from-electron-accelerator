@@ -6,15 +6,23 @@ export function reduceModifier({accelerator, event}, modifier) {
 	switch (modifier) {
 		case 'command':
 		case 'cmd': {
+			if (event.metaKey) {
+				throw new Error('Double `Command` modifier specified.');
+			}
+
 			return {
-				event: Object.assign({}, event, {meta: true}),
+				event: Object.assign({}, event, {metaKey: true}),
 				accelerator: accelerator.slice(modifier.length)
 			};
 		}
 		case 'control':
 		case 'ctrl': {
+			if (event.ctrlKey) {
+				throw new Error('Double `Control` modifier specified.');
+			}
+
 			return {
-				event: Object.assign({}, event, {ctrl: true}),
+				event: Object.assign({}, event, {ctrlKey: true}),
 				accelerator: accelerator.slice(modifier.length)
 			};
 		}
@@ -25,7 +33,14 @@ export function reduceModifier({accelerator, event}, modifier) {
 			break;
 		}
 		case 'alt': {
-			break;
+			if (event.altKey) {
+				throw new Error('Double `Alt` modifier specified.');
+			}
+
+			return {
+				event: Object.assign({}, event, {altKey: true}),
+				accelerator: accelerator.slice(modifier.length)
+			};
 		}
 		case 'option': {
 			break;

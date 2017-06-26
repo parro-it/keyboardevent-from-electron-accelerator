@@ -13,7 +13,19 @@ test('handle ctrl', t => {
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
-		event: {ctrl: true}
+		event: {ctrlKey: true}
+	});
+});
+
+test('handle alt', t => {
+	const newState = reduceModifier({
+		accelerator: 'alt+c',
+		event: {}
+	}, 'alt');
+
+	t.deepEqual(newState, {
+		accelerator: '+c',
+		event: {altKey: true}
 	});
 });
 
@@ -25,8 +37,50 @@ test('handle control', t => {
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
-		event: {ctrl: true}
+		event: {ctrlKey: true}
 	});
+});
+
+test('handle cmd', t => {
+	const newState = reduceModifier({
+		accelerator: 'cmd+c',
+		event: {}
+	}, 'cmd');
+
+	t.deepEqual(newState, {
+		accelerator: '+c',
+		event: {metaKey: true}
+	});
+});
+
+test('handle command', t => {
+	const newState = reduceModifier({
+		accelerator: 'command+c',
+		event: {}
+	}, 'command');
+
+	t.deepEqual(newState, {
+		accelerator: '+c',
+		event: {metaKey: true}
+	});
+});
+
+test('throw with double command', t => {
+	const err = t.throws(() => reduceModifier({
+		accelerator: 'command+c',
+		event: {metaKey: true}
+	}, 'command'));
+
+	t.is(err.message, 'Double `Command` modifier specified.');
+});
+
+test('throw with double control', t => {
+	const err = t.throws(() => reduceModifier({
+		accelerator: 'ctrl+c',
+		event: {ctrlKey: true}
+	}, 'ctrl'));
+
+	t.is(err.message, 'Double `Control` modifier specified.');
 });
 
 test('handle plus', t => {
