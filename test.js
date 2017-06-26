@@ -1,8 +1,24 @@
 import test from 'ava';
-import {match, reduceModifier, reducePlus, reduceKeyCode} from '.';
+import {reduceModifier, reducePlus, reduceCode, toKeyEvent} from '.';
 
-test('exports a function', t => {
-	t.is(typeof match, 'function');
+test('ctrl+shift+v', t => {
+	const event = toKeyEvent('ctrl+shift+v');
+
+	t.deepEqual(event, {
+		ctrlKey: true,
+		shiftKey: true,
+		code: 'v'
+	});
+});
+
+test('Control+Alt+Delete', t => {
+	const event = toKeyEvent('Control+Alt+Delete');
+
+	t.deepEqual(event, {
+		ctrlKey: true,
+		altKey: true,
+		key: 'Delete'
+	});
 });
 
 test('handle ctrl', t => {
@@ -152,7 +168,7 @@ test('handle plus', t => {
 });
 
 test('handle keyCode', t => {
-	const newState = reduceKeyCode({
+	const newState = reduceCode({
 		accelerator: 'c',
 		event: {}
 	}, 'c');

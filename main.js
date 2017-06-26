@@ -1,6 +1,6 @@
 
 const modifiers = /^(Command|Cmd|Control|Ctrl|CommandOrControl|CmdOrCtrl|Alt|Option|AltGr|Shift|Super)/i;
-const keyCodes = /^([0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]']|F1*[1-9]|F10|F2[0-4]|Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen)/i;
+const keyCodes = /^(Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen|[0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]']|F1*[1-9]|F10|F2[0-4])/i;
 
 export function reduceModifier({accelerator, event}, modifier) {
 	switch (modifier) {
@@ -68,30 +68,45 @@ export function reducePlus({accelerator, event}) {
 	};
 }
 
-export function reduceKeyCode({accelerator, event}, code) {
+export function reduceCode({accelerator, event}, code) {
 	return {
 		event: Object.assign({}, event, {code}),
 		accelerator: accelerator.trim().slice(code.length)
 	};
 }
 
-export function toKeyEvent(accelerator) {
-	let state = {accelerator, event: {}};
+const domKeys = Object.assign(Object.create(null), {
+	delete: 'Delete'
+});
+
+export function reduceKey({accelerator, event}, key) {
+	return {
+		event: Object.assign({}, event, {key}),
+		accelerator: accelerator.trim().slice(key.length)
+	};
+}
+
+export function toKeyEvent(acc) {
+	let state = {accelerator: acc, event: {}};
 	while (state.accelerator !== '') {
-		const modifierMatch = modifiers.match(accelerator);
+		const modifierMatch = state.accelerator.match(modifiers);
 		if (modifierMatch) {
 			const modifier = modifierMatch[0].toLowerCase();
 			state = reduceModifier(state, modifier);
-		}
-
-		if (state.accelerator.trim()[0] === '+') {
+		} else if (state.accelerator.trim()[0] === '+') {
 			state = reducePlus(state);
-		}
-
-		const keyCodeMatch = keyCodes.match(accelerator);
-		if (keyCodeMatch) {
-			const keyCode = keyCodeMatch[0].toLowerCase();
-			state = reduceKeyCode(keyCode);
+		} else {
+			const keyCodeMatch = state.accelerator.match(keyCodes);
+			if (keyCodeMatch) {
+				const keyCode = keyCodeMatch[0].toLowerCase();
+				if (keyCode in domKeys) {
+					state = reduceKey(state, domKeys[keyCode]);
+				} else {
+					state = reduceCode(state, keyCode);
+				}
+			} else {
+				throw new Error(`Unvalid accelerator: "${state.accelerator}"`);
+			}
 		}
 	}
 	return state.event;
