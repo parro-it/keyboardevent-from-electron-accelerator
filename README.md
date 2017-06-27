@@ -38,12 +38,11 @@ This module wrap the core logic of that match operation.
 
 ### toKeyEvent
 
-toKeyEvent function transform an Electron Accelerator string into
+This function transform an Electron Accelerator string into
 a DOM KeyboardEvent object.
 
 **Parameters**
 
--   `acc`  
 -   `accelerator` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** an Electron Accelerator string, e.g. `Ctrl+C` or `Shift+Space`.
 
 Returns **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** a DOM KeyboardEvent object derivate from the `accelerator` argument.
