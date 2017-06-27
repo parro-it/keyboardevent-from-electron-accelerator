@@ -1,42 +1,46 @@
-# keyboardevent-match-electron-accelerator
+# keyboardevent-from-electron-accelerator
 
-> match a DOM KeyboardEvent with an Electron Accelerator string
+> Transform an Electron Accelerator string into a DOM KeyboardEvent.
 
-background details relevant to understanding what this module does
+This module export a function that take an Electron Accelerator as input
+and return a corresponding KeyboardEvent object.
+
+E.g. `'Ctrl+Alt+C' => {code: 'c', ctrlKey: true, altKey: true}`
+
 
 ## Usage
 
-description of the example
+This example convert a string containing an Electron Accelerator to a corresponding KeyboardEvent object. Returned object is the keyevent that would be emitted if that key combination was pressed.
 
 ```js
-const keyboardeventMatchElectronAccelerator = require('keyboardevent-match-electron-accelerator');
-
-console.log({keyboardeventMatchElectronAccelerator});
+const {toKeyEvent} = require('keyboardevent-from-electron-accelerator');
+console.log(toKeyEvent('Shift+Delete'));
 ```
 
 This will output
 
 ```
+{key: 'Delete', shiftKey: true}
+
 ```
 
-[![Travis Build Status](https://img.shields.io/travis/parro-it/keyboardevent-match-electron-accelerator/master.svg)](http://travis-ci.org/parro-it/keyboardevent-match-electron-accelerator)
-[![NPM downloads](https://img.shields.io/npm/dt/keyboardevent-match-electron-accelerator.svg)](https://npmjs.org/package/keyboardevent-match-electron-accelerator)
+## Context and motivation for this module.
+
+This module is part of an ongoing effort to make [electron-localshortcut](https://github.com/parro-it/electron-localshortcut) less error prone, using keyboard DOM listener instead of 'globalShortcut' method to trigger shortcuts handlers.
+
+
+[![Travis Build Status](https://img.shields.io/travis/parro-it/keyboardevent-from-electron-accelerator/master.svg)](http://travis-ci.org/parro-it/keyboardevent-from-electron-accelerator)
+[![NPM downloads](https://img.shields.io/npm/dt/keyboardevent-from-electron-accelerator.svg)](https://npmjs.org/package/keyboardevent-from-electron-accelerator)
 
 
 ## API
-
-```js
-const keyboardeventMatchElectronAccelerator = (): object
-```
-
-description of the function signature
 
 ## Install
 
 With [npm](https://npmjs.org/) installed, run
 
 ```
-$ npm install keyboardevent-match-electron-accelerator
+$ npm install keyboardevent-from-electron-accelerator
 ```
 
 ## See Also

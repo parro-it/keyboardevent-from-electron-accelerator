@@ -1,8 +1,8 @@
 {
-  "name": "keyboardevent-match-electron-accelerator",
+  "name": "keyboardevent-from-electron-accelerator",
   "version": "0.0.1",
-  "description": "match a DOM KeyboardEvent with an Electron Accelerator string",
-  "repository": "parro-it/keyboardevent-match-electron-accelerator",
+  "description": "Transform an Electron Accelerator string into a DOM KeyboardEvent.",
+  "repository": "parro-it/keyboardevent-from-electron-accelerator",
   "author": "Andrea <andrea@parro.it>",
   "license": "MIT",
   "files": [
