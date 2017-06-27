@@ -11,7 +11,8 @@
     "main.js"
   ],
   "scripts": {
-    "test": "rollup -c && ava && xo --ignore example.js --ignore index.js"
+    "test": "rollup -c && ava && xo --ignore example.js --ignore index.js",
+    "doc": "documentation readme main.js --section=API"
   },
   "keywords": [],
   "tonicExampleFilename": "example.js",

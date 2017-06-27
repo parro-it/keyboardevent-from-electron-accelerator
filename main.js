@@ -86,6 +86,13 @@ export function reduceKey({accelerator, event}, key) {
 	};
 }
 
+/**
+ * This function transform an Electron Accelerator string into
+ * a DOM KeyboardEvent object.
+ *
+ * @param  {string} accelerator an Electron Accelerator string, e.g. `Ctrl+C` or `Shift+Space`.
+ * @return {object} a DOM KeyboardEvent object derivate from the `accelerator` argument.
+ */
 export function toKeyEvent(acc) {
 	let state = {accelerator: acc, event: {}};
 	while (state.accelerator !== '') {
