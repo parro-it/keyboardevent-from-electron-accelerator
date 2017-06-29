@@ -54,10 +54,9 @@ export function reduceModifier({accelerator, event}, modifier) {
 				accelerator: accelerator.slice(modifier.length)
 			};
 		}
-		case 'super': {
-			break;
-		}
+
 		default:
+			console.error(modifier);
 	}
 }
 
@@ -76,13 +75,38 @@ export function reduceCode({accelerator, event}, code) {
 }
 
 const domKeys = Object.assign(Object.create(null), {
-	delete: 'Delete'
+	plus: {key: 'Add'},
+	space: {code: ' '},
+	tab: {key: 'Tab'},
+	backspace: {key: 'Backspace'},
+	delete: {key: 'Delete'},
+	insert: {key: 'Insert'},
+	return: {key: 'Return'},
+	enter: {key: 'Return'},
+	up: {key: 'ArrowUp'},
+	down: {key: 'ArrowDown'},
+	left: {key: 'ArrowLeft'},
+	right: {key: 'ArrowRight'},
+	home: {key: 'Home'},
+	end: {key: 'End'},
+	pageup: {key: 'PageUp'},
+	pagedown: {key: 'PageDown'},
+	escape: {key: 'Escape'},
+	esc: {key: 'Escape'},
+	volumeup: {key: 'AudioVolumeUp'},
+	volumedown: {key: 'AudioVolumeDown'},
+	volumemute: {key: 'AudioVolumeMute'},
+	medianexttrack: {key: 'MediaTrackNext'},
+	mediaprevioustrack: {key: 'MediaTrackPrevious'},
+	mediastop: {key: 'MediaStop'},
+	mediaplaypause: {key: 'MediaPlayPause'},
+	printscreen: {key: 'PrintScreen'}
 });
 
-export function reduceKey({accelerator, event}, key) {
+export function reduceKey({accelerator, event}, {keys, key}) {
 	return {
-		event: Object.assign({}, event, {key}),
-		accelerator: accelerator.trim().slice(key.length)
+		event: Object.assign({}, event, {key: key.key}, key.code ? {code: key.code} : null),
+		accelerator: accelerator.trim().slice(keys.length)
 	};
 }
 
@@ -107,7 +131,10 @@ export function toKeyEvent(accelerator) {
 			if (keyCodeMatch) {
 				const keyCode = keyCodeMatch[0].toLowerCase();
 				if (keyCode in domKeys) {
-					state = reduceKey(state, domKeys[keyCode]);
+					state = reduceKey(state, {
+						keys: keyCode,
+						key: domKeys[keyCode]
+					});
 				} else {
 					state = reduceCode(state, keyCode);
 				}

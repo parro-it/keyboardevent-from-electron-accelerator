@@ -1,6 +1,14 @@
 import test from 'ava';
 import {reduceModifier, reducePlus, reduceCode, toKeyEvent} from '.';
 
+test('VolumeUp', t => {
+	const event = toKeyEvent('VolumeUp');
+
+	t.deepEqual(event, {
+		key: 'AudioVolumeUp'
+	});
+});
+
 test('ctrl+shift+v', t => {
 	const event = toKeyEvent('ctrl+shift+v');
 
