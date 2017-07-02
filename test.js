@@ -19,6 +19,14 @@ test('ctrl+shift+v', t => {
 	});
 });
 
+test('CmdOrCtrl+v', t => {
+	const event = toKeyEvent('CmdOrCtrl+v');
+	t.deepEqual(event, {
+		ctrlKey: true,
+		code: 'v'
+	});
+});
+
 test('Control+Alt+Delete', t => {
 	const event = toKeyEvent('Control+Alt+Delete');
 

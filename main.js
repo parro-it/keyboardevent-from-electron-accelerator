@@ -1,5 +1,5 @@
 
-const modifiers = /^(Command|Cmd|Control|Ctrl|CommandOrControl|CmdOrCtrl|Alt|Option|AltGr|Shift|Super)/i;
+const modifiers = /^(CommandOrControl|CmdOrCtrl|Command|Cmd|Control|Ctrl|Alt|Option|AltGr|Shift|Super)/i;
 const keyCodes = /^(Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen|[0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]']|F1*[1-9]|F10|F2[0-4])/i;
 
 export function reduceModifier({accelerator, event}, modifier) {
@@ -26,11 +26,27 @@ export function reduceModifier({accelerator, event}, modifier) {
 				accelerator: accelerator.slice(modifier.length)
 			};
 		}
-		case 'commandorcontrol': {
-			break;
-		}
+		case 'commandorcontrol':
 		case 'cmdorctrl': {
-			break;
+			if (process.platform === 'darwin') {
+				if (event.metaKey) {
+					throw new Error('Double `Command` modifier specified.');
+				}
+
+				return {
+					event: Object.assign({}, event, {metaKey: true}),
+					accelerator: accelerator.slice(modifier.length)
+				};
+			}
+
+			if (event.ctrlKey) {
+				throw new Error('Double `Control` modifier specified.');
+			}
+
+			return {
+				event: Object.assign({}, event, {ctrlKey: true}),
+				accelerator: accelerator.slice(modifier.length)
+			};
 		}
 		case 'option':
 		case 'altgr':
