@@ -1,11 +1,12 @@
 import test from 'ava';
-import {reduceModifier, reducePlus, reduceCode, toKeyEvent} from '.';
+import {reduceModifier, reducePlus, reduceKey, toKeyEvent} from '.';
 
 test('VolumeUp', t => {
 	const event = toKeyEvent('VolumeUp');
 
 	t.deepEqual(event, {
-		key: 'AudioVolumeUp'
+		code: 'AudioVolumeUp',
+		key: 'volumeup'
 	});
 });
 
@@ -15,7 +16,7 @@ test('ctrl+shift+v', t => {
 	t.deepEqual(event, {
 		ctrlKey: true,
 		shiftKey: true,
-		code: 'v'
+		key: 'v'
 	});
 });
 
@@ -23,7 +24,7 @@ test('CmdOrCtrl+v', t => {
 	const event = toKeyEvent('CmdOrCtrl+v');
 	t.deepEqual(event, {
 		ctrlKey: true,
-		code: 'v'
+		key: 'v'
 	});
 });
 
@@ -33,7 +34,8 @@ test('Control+Alt+Delete', t => {
 	t.deepEqual(event, {
 		ctrlKey: true,
 		altKey: true,
-		key: 'Delete'
+		code: 'Delete',
+		key: 'delete'
 	});
 });
 
@@ -184,13 +186,13 @@ test('handle plus', t => {
 });
 
 test('handle keyCode', t => {
-	const newState = reduceCode({
+	const newState = reduceKey({
 		accelerator: 'c',
 		event: {}
 	}, 'c');
 
 	t.deepEqual(newState, {
 		accelerator: '',
-		event: {code: 'c'}
+		event: {key: 'c'}
 	});
 });

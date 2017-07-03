@@ -83,46 +83,46 @@ export function reducePlus({accelerator, event}) {
 	};
 }
 
-export function reduceCode({accelerator, event}, code) {
+export function reduceKey({accelerator, event}, key) {
 	return {
-		event: Object.assign({}, event, {code}),
-		accelerator: accelerator.trim().slice(code.length)
+		event: Object.assign({}, event, {key}),
+		accelerator: accelerator.trim().slice(key.length)
 	};
 }
 
 const domKeys = Object.assign(Object.create(null), {
-	plus: {key: 'Add'},
-	space: {code: ' '},
-	tab: {key: 'Tab'},
-	backspace: {key: 'Backspace'},
-	delete: {key: 'Delete'},
-	insert: {key: 'Insert'},
-	return: {key: 'Return'},
-	enter: {key: 'Return'},
-	up: {key: 'ArrowUp'},
-	down: {key: 'ArrowDown'},
-	left: {key: 'ArrowLeft'},
-	right: {key: 'ArrowRight'},
-	home: {key: 'Home'},
-	end: {key: 'End'},
-	pageup: {key: 'PageUp'},
-	pagedown: {key: 'PageDown'},
-	escape: {key: 'Escape'},
-	esc: {key: 'Escape'},
-	volumeup: {key: 'AudioVolumeUp'},
-	volumedown: {key: 'AudioVolumeDown'},
-	volumemute: {key: 'AudioVolumeMute'},
-	medianexttrack: {key: 'MediaTrackNext'},
-	mediaprevioustrack: {key: 'MediaTrackPrevious'},
-	mediastop: {key: 'MediaStop'},
-	mediaplaypause: {key: 'MediaPlayPause'},
-	printscreen: {key: 'PrintScreen'}
+	plus: 'Add',
+	space: ' ',
+	tab: 'Tab',
+	backspace: 'Backspace',
+	delete: 'Delete',
+	insert: 'Insert',
+	return: 'Return',
+	enter: 'Return',
+	up: 'ArrowUp',
+	down: 'ArrowDown',
+	left: 'ArrowLeft',
+	right: 'ArrowRight',
+	home: 'Home',
+	end: 'End',
+	pageup: 'PageUp',
+	pagedown: 'PageDown',
+	escape: 'Escape',
+	esc: 'Escape',
+	volumeup: 'AudioVolumeUp',
+	volumedown: 'AudioVolumeDown',
+	volumemute: 'AudioVolumeMute',
+	medianexttrack: 'MediaTrackNext',
+	mediaprevioustrack: 'MediaTrackPrevious',
+	mediastop: 'MediaStop',
+	mediaplaypause: 'MediaPlayPause',
+	printscreen: 'PrintScreen'
 });
 
-export function reduceKey({accelerator, event}, {keys, key}) {
+export function reduceCode({accelerator, event}, {code, key}) {
 	return {
-		event: Object.assign({}, event, {code: key.key}, key.code ? {key: key.code} : null),
-		accelerator: accelerator.trim().slice(keys.length)
+		event: Object.assign({}, event, {key}, code ? {code} : null),
+		accelerator: accelerator.trim().slice((key && key.length) || 0)
 	};
 }
 
@@ -143,16 +143,16 @@ export function toKeyEvent(accelerator) {
 		} else if (state.accelerator.trim()[0] === '+') {
 			state = reducePlus(state);
 		} else {
-			const keyCodeMatch = state.accelerator.match(keyCodes);
-			if (keyCodeMatch) {
-				const keyCode = keyCodeMatch[0].toLowerCase();
-				if (keyCode in domKeys) {
-					state = reduceKey(state, {
-						keys: keyCode,
-						key: domKeys[keyCode]
+			const codeMatch = state.accelerator.match(keyCodes);
+			if (codeMatch) {
+				const code = codeMatch[0].toLowerCase();
+				if (code in domKeys) {
+					state = reduceCode(state, {
+						code: domKeys[code],
+						key: code
 					});
 				} else {
-					state = reduceCode(state, keyCode);
+					state = reduceKey(state, code);
 				}
 			} else {
 				throw new Error(`Unvalid accelerator: "${state.accelerator}"`);
