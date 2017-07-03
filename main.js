@@ -121,7 +121,7 @@ const domKeys = Object.assign(Object.create(null), {
 
 export function reduceKey({accelerator, event}, {keys, key}) {
 	return {
-		event: Object.assign({}, event, {key: key.key}, key.code ? {code: key.code} : null),
+		event: Object.assign({}, event, {code: key.key}, key.code ? {key: key.code} : null),
 		accelerator: accelerator.trim().slice(keys.length)
 	};
 }
