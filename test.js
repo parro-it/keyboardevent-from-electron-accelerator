@@ -1,6 +1,8 @@
+import fs from 'fs';
 import test from 'ava';
 import {reduceModifier, reducePlus, reduceKey, toKeyEvent} from '.';
-import fs from 'fs';
+
+const accelerators = JSON.parse(fs.readFileSync('./github-search-results.json', 'utf-8'));
 
 test('VolumeUp', t => {
 	const event = toKeyEvent('VolumeUp');
@@ -198,16 +200,8 @@ test('handle keyCode', t => {
 	});
 });
 
-test('handle github-search', t => {
-	const accelerators = JSON.parse(fs.readFileSync('./github-search-results.json', 'utf-8'));
-	const incorrect = accelerators.filter(accelerator => {
-		try {
-			toKeyEvent(accelerator);
-			return false;
-		} catch (e) {
-			return true;
-		}
+accelerators.forEach(accelerator => test(`Convert ${accelerator}`, t => {
+	t.notThrows(() => {
+		toKeyEvent(accelerator);
 	});
-
-	t.true(incorrect.length === 0);
-});
+}));
