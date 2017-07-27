@@ -1,345 +1,1501 @@
-[
-  "0",
-  "MediaNextTrack",
-  "CommandOrControl+P",
-  "n",
-  "p",
-  "Ctrl+A",
-  "Up",
-  "Down",
-  "Cmd+Shift+Y",
-  "U",
-  "D",
-  "CommandOrControl+X",
-  "MediaPreviousTrack",
-  "CommandOrControl+L",
-  "Ctrl+V",
-  "CmdOrCtrl+F12",
-  "CommandOrControl+Alt+Q",
-  "Alt+A",
-  "Cmd+Y",
-  "MediaPlayPause",
-  "Right",
-  "Left",
-  "Alt+Command+I",
-  "Command+Shift+F",
-  "CommandOrControl+D",
-  "CommandOrControl+Alt+K",
-  "CommandOrControl+S",
-  "CommandOrControl+Shift+I",
-  "F7",
-  "F8",
-  "Control+1",
-  "Control+2",
-  "CommandOrControl+Alt+J",
-  "cmd+alt+i",
-  "CommandOrControl+Up",
-  "CommandOrControl+Down",
-  "CmdOrCtrl+R",
-  "CmdOrCtrl+Shift+R",
-  "Command+Option+I",
-  "Esc",
-  "CommandOrControl+Shift+8",
-  "Control+Super+K",
-  "Control+Super+L",
-  "CommandOrControl+B",
-  "CommandOrControl+I",
-  "CommandOrControl+",
-  "CmdOrCtrl+w",
-  "ctrl+x",
-  "ctrl+z",
-  "Alt+",
-  "Shift+CommandOrControl+R",
-  "medianexttrack",
-  "mediaplaypause",
-  "CommandOrControl+R",
-  "CommandOrControl+Q",
-  "CommandOrControl+F",
-  "Alt+Space",
-  "CmdOrCtrl+Shift+Space",
-  "CmdOrCtrl+Shift+Right",
-  "Alt+U",
-  "Alt+F10",
-  "Alt+F11",
-  "A",
-  "B",
-  "VolumeUp",
-  "CommandOrControl+N",
-  "CommandOrControl+O",
-  "Control+a",
-  "Control+s",
-  "Control+H",
-  "Control+M",
-  "CommandOrControl+Alt+D",
-  "Cmd+Ctrl+Alt+D",
-  "CmdOrCtrl+T",
-  "CmdOrCtrl+Shift+d",
-  "CmdOrCtrl+Shift+r",
-  "Ctrl+Alt+Cmd+D",
-  "ctrl+shift+c",
-  "CommandOrControl+Shift+5",
-  "Ctrl+Shift+Space",
-  "CommandOrControl+Shift+3",
-  "ctrl+shift+space",
-  "alt+s",
-  "alt+c",
-  "Ctrl+VolumeUp",
-  "Ctrl+VolumeDown",
-  "Shift+CommandOrControl+O",
-  "Ctrl+Alt+D",
-  "CommandOrControl+Alt+k+b",
-  "VolumeDown",
-  "VolumeMute",
-  "Control+Alt+Delete",
-  "Control+Escape",
-  "Alt+1",
-  "CommandOrControl+E",
-  "CommandOrControl+Y",
-  "ctrl+alt+d",
-  "MediaStop",
-  "CommandOrControl+Alt+Right",
-  "F10",
-  "CmdOrCtrl+p",
-  "CmdOrCtrl+Shift+D",
-  "cmd+h",
-  "ctrl+shift+1",
-  "Comamnd+Shift+F",
-  "ctrl+shift+2",
-  "CommandOrControl+Space",
-  "ctrl+1",
-  "ctrl+2",
-  "CommandOrControl+Shift+D",
-  "CommandOrControl+Alt+T",
-  "CommandOrControl+Shift+H",
-  "CommandOrControl+Alt+C",
-  "Escape",
-  "ctrl+space",
-  "CmdOrCtrl+A",
-  "CmdOrCtrl+S",
-  "F12",
-  "CmdOrCtrl+1",
-  "CommandOrControl+G",
-  "CmdOrCtrl+Shift+i",
-  "ctrl+",
-  "CommandOrControl+Shift+Q",
-  "CommandOrControl+Shift+W",
-  "Control+S",
-  "s",
-  "CommandOrControl+Alt+H",
-  "Control+",
-  "Ctrl+",
-  "CmdOrCtrl+Shift+S",
-  "ctrl+e",
-  "Ctrl+Alt+Shift+P",
-  "esc",
-  "F5",
-  "cmd+shift+space",
-  "CommandOrControl+Tab",
-  "c",
-  "ctrl+d",
-  "Ctrl+Shift+i",
-  "Ctrl+Left",
-  "CommandOrControl+f11",
-  "Ctrl+Alt+o",
-  "CommandOrControl+Alt+O",
-  "CommandOrControl+q",
-  "CommandOrControl+alt+8",
-  "CommandOrControl+alt+9",
-  "CommandOrControl+Alt+E",
-  "Command+Control+Alt+0",
-  "ctrl+shift+i",
-  "ctrl+shift+q",
-  "Super+Enter",
-  "CommandOrControl+Escape",
-  "Control+b",
-  "Command+Space",
-  "ctrl+k",
-  "ctrl+l",
-  "F1",
-  "F2",
-  "Shift+CmdOrCtrl+C",
-  "Ctrl+O",
-  "Ctrl+S",
-  "ctrl+w",
-  "CommandOrControl+Shift+Space",
-  "shift+alt+v",
-  "f5",
-  "f4",
-  "ctrl+shift+g",
-  "ALT+N",
-  "ALT+M",
-  "CommandOrControl+shift+1",
-  "CommandOrControl+shift+2",
-  "Command+Shift+X",
-  "CommandOrControl+Shift+R",
-  "Alt+Command+K",
-  "Command+W",
-  "ctrl+n",
-  "Alt+G",
-  "CmdOrCtrl+Alt+D",
-  "Control+Space",
-  "CommandOrControl+3",
-  "CommandOrControl+H",
-  "CmdOrCtrl+O",
-  "CmdOrCtrl+D",
-  "Control+Shift+I",
-  "Alt+Enter",
-  "ctrl+r",
-  "CommandOrControl+F4",
-  "CmdOrCtrl+Shift+b",
-  "a",
-  "CommandOrControl+Shift+i",
-  "alt+g",
-  "alt+e",
-  "CommandOrControl+Alt+Shift+I",
-  "Space",
-  "CmdOrCtrl+Alt+Z",
-  "CmdOrCtrl+f11",
-  "CmdOrCtrl+f12",
-  "ctrl+alt+r",
-  "Control+Shift+C",
-  "Cmd+Option+Left",
-  "space",
-  "CmdOrCtrl+2",
-  "CommandOrControl+Shift+E",
-  "h",
-  "l",
-  "CmdOrCtrl+N",
-  "CMD+Alt+C",
-  "CmdOrCtrl+C",
-  "CmdOrCtrl+Y",
-  "ctrl+alt+h",
-  "CommandOrControl+ESC",
-  "CommandOrControl+1",
-  "Control+R",
-  "Super+Y",
-  "Ctrl+Shift+1",
-  "Ctrl+Alt+Cmd+F",
-  "volumeUp",
-  "Alt+Up",
-  "CmdOrCtrl+Alt+Left",
-  "CmdOrCtrl+Alt+Right",
-  "Enter",
-  "Command+Y",
-  "ctrl+o",
-  "cmd+alt+k",
-  "ctrl+alt+a",
-  "CommandOrControl+Alt+Shift+Up",
-  "CommandOrControl+Alt+Shift+Right",
-  "Control+F",
-  "CmdOrCtrl+Left",
-  "ctrl+alt+j",
-  "CommandOrControl+Shift+M",
-  "Control+Alt+I",
-  "Ctrl+T",
-  "Command+Shift+1",
-  "Command+i",
-  "Shift+Alt+Enter",
-  "Shift+Alt+Space",
-  "ctrl+alt+m",
-  "CommandOrControl+0",
-  "CommandOrControl+F12",
-  "CommandOrControl+F5",
-  "ctrl+alt+1",
-  "ctrl+alt+2",
-  "ctrl+alt+3",
-  "Alt+Q",
-  "Alt+W",
-  "CommandOrControl+Alt+I",
-  "Alt+Shift+Up",
-  "Alt+F4",
-  "Control+Command+S",
-  "ctrl+shift+d",
-  "cmdOrCtrl+f11",
-  "cmdOrCtrl+f12",
-  "Cmd+Alt+T",
-  "R",
-  "Q",
-  "CommandOrControl+Shift+K",
-  "CmdOrCtrl+",
-  "f8",
-  "Control+Shift+X",
-  "Shift+PageUp",
-  "PageDown",
-  "F11",
-  "f12",
-  "F9",
-  "ctrl+alt+i",
-  "ctrl+alt+shift+y",
-  "escape",
-  "Command+O",
-  "ctrl+alt+Enter",
-  "CommandOrControl+C",
-  "CommandOrControl+8",
-  "CommandOrControl+9",
-  "CmdOrCtrl+M",
-  "Control+Command+g",
-  "Ctrl+Space",
-  "Command+Control+Alt+G",
-  "Control+W",
-  "Super+Shift+",
-  "CommandOrControl+Shift+P",
-  "command+q",
-  "command+shift+q",
-  "Alt+Z",
-  "Alt+F12",
-  "CommandOrControl+A",
-  "Alt+CmdOrCtrl+M",
-  "alt+w",
-  "Control+Right",
-  "Control+Left",
-  "ctrl+shift+n",
-  "ctrl+shift+p",
-  "CommandOrControl+U",
-  "F6",
-  "Ctrl+Alt+U",
-  "CmdorCtrl+Alt+C",
-  "CommandOrControl+M",
-  "ctrl+shift+j",
-  "enter",
-  "Command+Left",
-  "Control+Shift+6",
-  "Control+Shift+5",
-  "Alt+D",
-  "Command+Control+Shift+D",
-  "ctrl+right",
-  "ctrl+down",
-  "ctrl+s",
-  "ctrl+shift+3",
-  "ctrl+shift+4",
-  "CommandOrControl+Alt+F",
-  "up",
-  "Command+Control+M",
-  "Shift+Ctrl+Alt+Super+6",
-  "Shift+Ctrl+Alt+Super+7",
-  "CommandOrControl+Shift+0",
-  "Ctrl+y",
-  "f",
-  "ctrl+alt+s",
-  "ctrl+alt+e",
-  "Cmd+Ctrl+f",
-  "F13",
-  "Ctrl+F12",
-  "Ctrl+Alt+X",
-  "Super+D",
-  "Alt+Tab",
-  "CmdOrCtrl+Alt+d",
-  "Ctrl+N",
-  "Ctrl+Shift+N",
-  "CommandOrControl+Shift+k",
-  "ctrl+esc",
-  "CmdOrCtrl+Shift+J",
-  "CommandOrControl+T",
-  "ctrl+t",
-  "CommandOrControl+Alt+left",
-  "ctrl+enter",
-  "CommandOrControl+Shift+L",
-  "CommandOrControl+Shift+C",
-  "Ctrl+Shift+P",
-  "CommandOrControl+Alt+G",
-  "Command+Shift+A",
-  "CommandOrControl+Z",
-  "CmdOrCtrl+shift+c",
-  "CmdOrCtrl+shift+v",
-  "Control+P"
-]
+{
+  "0": {
+    "key": "0"
+  },
+  "MediaNextTrack": {
+    "key": "medianexttrack",
+    "code": "MediaTrackNext"
+  },
+  "CommandOrControl+P": {
+    "ctrlKey": true,
+    "key": "p"
+  },
+  "n": {
+    "key": "n"
+  },
+  "p": {
+    "key": "p"
+  },
+  "Ctrl+A": {
+    "ctrlKey": true,
+    "key": "a"
+  },
+  "Up": {
+    "key": "up",
+    "code": "ArrowUp"
+  },
+  "Down": {
+    "key": "down",
+    "code": "ArrowDown"
+  },
+  "Cmd+Shift+Y": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "y"
+  },
+  "U": {
+    "key": "u"
+  },
+  "D": {
+    "key": "d"
+  },
+  "CommandOrControl+X": {
+    "ctrlKey": true,
+    "key": "x"
+  },
+  "MediaPreviousTrack": {
+    "key": "mediaprevioustrack",
+    "code": "MediaTrackPrevious"
+  },
+  "CommandOrControl+L": {
+    "ctrlKey": true,
+    "key": "l"
+  },
+  "Ctrl+V": {
+    "ctrlKey": true,
+    "key": "v"
+  },
+  "CmdOrCtrl+F12": {
+    "ctrlKey": true,
+    "key": "f12",
+    "code": "F12"
+  },
+  "CommandOrControl+Alt+Q": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "q"
+  },
+  "Alt+A": {
+    "altKey": true,
+    "key": "a"
+  },
+  "Cmd+Y": {
+    "metaKey": true,
+    "key": "y"
+  },
+  "MediaPlayPause": {
+    "key": "mediaplaypause",
+    "code": "MediaPlayPause"
+  },
+  "Right": {
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "Left": {
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "Alt+Command+I": {
+    "altKey": true,
+    "metaKey": true,
+    "key": "i"
+  },
+  "Command+Shift+F": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "f"
+  },
+  "CommandOrControl+D": {
+    "ctrlKey": true,
+    "key": "d"
+  },
+  "CommandOrControl+Alt+K": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "k"
+  },
+  "CommandOrControl+S": {
+    "ctrlKey": true,
+    "key": "s"
+  },
+  "CommandOrControl+Shift+I": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+
+  "Control+1": {
+    "ctrlKey": true,
+    "key": "1"
+  },
+  "Control+2": {
+    "ctrlKey": true,
+    "key": "2"
+  },
+  "CommandOrControl+Alt+J": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "j"
+  },
+  "cmd+alt+i": {
+    "metaKey": true,
+    "altKey": true,
+    "key": "i"
+  },
+  "CommandOrControl+Up": {
+    "ctrlKey": true,
+    "key": "up",
+    "code": "ArrowUp"
+  },
+  "CommandOrControl+Down": {
+    "ctrlKey": true,
+    "key": "down",
+    "code": "ArrowDown"
+  },
+  "CmdOrCtrl+R": {
+    "ctrlKey": true,
+    "key": "r"
+  },
+  "CmdOrCtrl+Shift+R": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "r"
+  },
+  "Command+Option+I": {
+    "metaKey": true,
+    "altKey": true,
+    "key": "i"
+  },
+  "Esc": {
+    "key": "esc",
+    "code": "Escape"
+  },
+  "CommandOrControl+Shift+8": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "8"
+  },
+  "Control+Super+K": {
+    "ctrlKey": true,
+    "metaKey": true,
+    "key": "k"
+  },
+  "Control+Super+L": {
+    "ctrlKey": true,
+    "metaKey": true,
+    "key": "l"
+  },
+  "CommandOrControl+B": {
+    "ctrlKey": true,
+    "key": "b"
+  },
+  "CommandOrControl+I": {
+    "ctrlKey": true,
+    "key": "i"
+  },
+  "CommandOrControl+": {
+    "ctrlKey": true
+  },
+  "CmdOrCtrl+w": {
+    "ctrlKey": true,
+    "key": "w"
+  },
+  "ctrl+x": {
+    "ctrlKey": true,
+    "key": "x"
+  },
+  "ctrl+z": {
+    "ctrlKey": true,
+    "key": "z"
+  },
+  "Alt+": {
+    "altKey": true
+  },
+  "Shift+CommandOrControl+R": {
+    "shiftKey": true,
+    "ctrlKey": true,
+    "key": "r"
+  },
+  "medianexttrack": {
+    "key": "medianexttrack",
+    "code": "MediaTrackNext"
+  },
+  "mediaplaypause": {
+    "key": "mediaplaypause",
+    "code": "MediaPlayPause"
+  },
+  "CommandOrControl+R": {
+    "ctrlKey": true,
+    "key": "r"
+  },
+  "CommandOrControl+Q": {
+    "ctrlKey": true,
+    "key": "q"
+  },
+  "CommandOrControl+F": {
+    "ctrlKey": true,
+    "key": "f"
+  },
+  "Alt+Space": {
+    "altKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "CmdOrCtrl+Shift+Space": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "CmdOrCtrl+Shift+Right": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "Alt+U": {
+    "altKey": true,
+    "key": "u"
+  },
+  "Alt+F10": {
+    "altKey": true,
+    "key": "f10",
+    "code": "F10"
+  },
+  "Alt+F11": {
+    "altKey": true,
+    "key": "f11",
+    "code": "F11"
+  },
+  "A": {
+    "key": "a"
+  },
+  "B": {
+    "key": "b"
+  },
+  "VolumeUp": {
+    "key": "volumeup",
+    "code": "AudioVolumeUp"
+  },
+  "CommandOrControl+N": {
+    "ctrlKey": true,
+    "key": "n"
+  },
+  "CommandOrControl+O": {
+    "ctrlKey": true,
+    "key": "o"
+  },
+  "Control+a": {
+    "ctrlKey": true,
+    "key": "a"
+  },
+  "Control+s": {
+    "ctrlKey": true,
+    "key": "s"
+  },
+  "Control+H": {
+    "ctrlKey": true,
+    "key": "h"
+  },
+  "Control+M": {
+    "ctrlKey": true,
+    "key": "m"
+  },
+  "CommandOrControl+Alt+D": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "d"
+  },
+  "Cmd+Ctrl+Alt+D": {
+    "metaKey": true,
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "d"
+  },
+  "CmdOrCtrl+T": {
+    "ctrlKey": true,
+    "key": "t"
+  },
+  "CmdOrCtrl+Shift+d": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "d"
+  },
+  "CmdOrCtrl+Shift+r": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "r"
+  },
+  "Ctrl+Alt+Cmd+D": {
+    "ctrlKey": true,
+    "altKey": true,
+    "metaKey": true,
+    "key": "d"
+  },
+  "ctrl+shift+c": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "c"
+  },
+  "CommandOrControl+Shift+5": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "5"
+  },
+  "Ctrl+Shift+Space": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "CommandOrControl+Shift+3": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "3"
+  },
+  "ctrl+shift+space": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "alt+s": {
+    "altKey": true,
+    "key": "s"
+  },
+  "alt+c": {
+    "altKey": true,
+    "key": "c"
+  },
+  "Ctrl+VolumeUp": {
+    "ctrlKey": true,
+    "key": "volumeup",
+    "code": "AudioVolumeUp"
+  },
+  "Ctrl+VolumeDown": {
+    "ctrlKey": true,
+    "key": "volumedown",
+    "code": "AudioVolumeDown"
+  },
+  "Shift+CommandOrControl+O": {
+    "shiftKey": true,
+    "ctrlKey": true,
+    "key": "o"
+  },
+  "Ctrl+Alt+D": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "d"
+  },
+  "CommandOrControl+Alt+k+b": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "b"
+  },
+  "VolumeDown": {
+    "key": "volumedown",
+    "code": "AudioVolumeDown"
+  },
+  "VolumeMute": {
+    "key": "volumemute",
+    "code": "AudioVolumeMute"
+  },
+  "Control+Alt+Delete": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "delete",
+    "code": "Delete"
+  },
+  "Control+Escape": {
+    "ctrlKey": true,
+    "key": "escape",
+    "code": "Escape"
+  },
+  "Alt+1": {
+    "altKey": true,
+    "key": "1"
+  },
+  "CommandOrControl+E": {
+    "ctrlKey": true,
+    "key": "e"
+  },
+  "CommandOrControl+Y": {
+    "ctrlKey": true,
+    "key": "y"
+  },
+  "ctrl+alt+d": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "d"
+  },
+  "MediaStop": {
+    "key": "mediastop",
+    "code": "MediaStop"
+  },
+  "CommandOrControl+Alt+Right": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "CmdOrCtrl+p": {
+    "ctrlKey": true,
+    "key": "p"
+  },
+  "CmdOrCtrl+Shift+D": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "d"
+  },
+  "cmd+h": {
+    "metaKey": true,
+    "key": "h"
+  },
+  "ctrl+shift+1": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "1"
+  },
+  "Comamnd+Shift+F": {
+    "key": "f",
+    "shiftKey": true
+  },
+  "ctrl+shift+2": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "2"
+  },
+  "CommandOrControl+Space": {
+    "ctrlKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "ctrl+1": {
+    "ctrlKey": true,
+    "key": "1"
+  },
+  "ctrl+2": {
+    "ctrlKey": true,
+    "key": "2"
+  },
+  "CommandOrControl+Shift+D": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "d"
+  },
+  "CommandOrControl+Alt+T": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "t"
+  },
+  "CommandOrControl+Shift+H": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "h"
+  },
+  "CommandOrControl+Alt+C": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "c"
+  },
+  "Escape": {
+    "key": "escape",
+    "code": "Escape"
+  },
+  "ctrl+space": {
+    "ctrlKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "CmdOrCtrl+A": {
+    "ctrlKey": true,
+    "key": "a"
+  },
+  "CmdOrCtrl+S": {
+    "ctrlKey": true,
+    "key": "s"
+  },
+  "CmdOrCtrl+1": {
+    "ctrlKey": true,
+    "key": "1"
+  },
+  "CommandOrControl+G": {
+    "ctrlKey": true,
+    "key": "g"
+  },
+  "CmdOrCtrl+Shift+i": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+  "ctrl+": {
+    "ctrlKey": true
+  },
+  "CommandOrControl+Shift+Q": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "q"
+  },
+  "CommandOrControl+Shift+W": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "w"
+  },
+  "Control+S": {
+    "ctrlKey": true,
+    "key": "s"
+  },
+  "s": {
+    "key": "s"
+  },
+  "CommandOrControl+Alt+H": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "h"
+  },
+  "Control+": {
+    "ctrlKey": true
+  },
+  "Ctrl+": {
+    "ctrlKey": true
+  },
+  "CmdOrCtrl+Shift+S": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "s"
+  },
+  "ctrl+e": {
+    "ctrlKey": true,
+    "key": "e"
+  },
+  "Ctrl+Alt+Shift+P": {
+    "ctrlKey": true,
+    "altKey": true,
+    "shiftKey": true,
+    "key": "p"
+  },
+  "esc": {
+    "key": "esc",
+    "code": "Escape"
+  },
+  "cmd+shift+space": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "CommandOrControl+Tab": {
+    "ctrlKey": true,
+    "key": "tab",
+    "code": "Tab"
+  },
+  "c": {
+    "key": "c"
+  },
+  "ctrl+d": {
+    "ctrlKey": true,
+    "key": "d"
+  },
+  "Ctrl+Shift+i": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+  "Ctrl+Left": {
+    "ctrlKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "CommandOrControl+f11": {
+    "ctrlKey": true,
+    "key": "f11",
+    "code": "F11"
+  },
+  "Ctrl+Alt+o": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "o"
+  },
+  "CommandOrControl+Alt+O": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "o"
+  },
+  "CommandOrControl+q": {
+    "ctrlKey": true,
+    "key": "q"
+  },
+  "CommandOrControl+alt+8": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "8"
+  },
+  "CommandOrControl+alt+9": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "9"
+  },
+  "CommandOrControl+Alt+E": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "e"
+  },
+  "Command+Control+Alt+0": {
+    "metaKey": true,
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "0"
+  },
+  "ctrl+shift+i": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+  "ctrl+shift+q": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "q"
+  },
+  "Super+Enter": {
+    "metaKey": true,
+    "key": "enter",
+    "code": "Return"
+  },
+  "CommandOrControl+Escape": {
+    "ctrlKey": true,
+    "key": "escape",
+    "code": "Escape"
+  },
+  "Control+b": {
+    "ctrlKey": true,
+    "key": "b"
+  },
+  "Command+Space": {
+    "metaKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "ctrl+k": {
+    "ctrlKey": true,
+    "key": "k"
+  },
+  "ctrl+l": {
+    "ctrlKey": true,
+    "key": "l"
+  },
+  "Shift+CmdOrCtrl+C": {
+    "shiftKey": true,
+    "ctrlKey": true,
+    "key": "c"
+  },
+  "Ctrl+O": {
+    "ctrlKey": true,
+    "key": "o"
+  },
+  "Ctrl+S": {
+    "ctrlKey": true,
+    "key": "s"
+  },
+  "ctrl+w": {
+    "ctrlKey": true,
+    "key": "w"
+  },
+  "CommandOrControl+Shift+Space": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "shift+alt+v": {
+    "shiftKey": true,
+    "altKey": true,
+    "key": "v"
+  },
+
+  "ctrl+shift+g": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "g"
+  },
+  "ALT+N": {
+    "altKey": true,
+    "key": "n"
+  },
+  "ALT+M": {
+    "altKey": true,
+    "key": "m"
+  },
+  "CommandOrControl+shift+1": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "1"
+  },
+  "CommandOrControl+shift+2": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "2"
+  },
+  "Command+Shift+X": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "x"
+  },
+  "CommandOrControl+Shift+R": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "r"
+  },
+  "Alt+Command+K": {
+    "altKey": true,
+    "metaKey": true,
+    "key": "k"
+  },
+  "Command+W": {
+    "metaKey": true,
+    "key": "w"
+  },
+  "ctrl+n": {
+    "ctrlKey": true,
+    "key": "n"
+  },
+  "Alt+G": {
+    "altKey": true,
+    "key": "g"
+  },
+  "CmdOrCtrl+Alt+D": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "d"
+  },
+  "Control+Space": {
+    "ctrlKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "CommandOrControl+3": {
+    "ctrlKey": true,
+    "key": "3"
+  },
+  "CommandOrControl+H": {
+    "ctrlKey": true,
+    "key": "h"
+  },
+  "CmdOrCtrl+O": {
+    "ctrlKey": true,
+    "key": "o"
+  },
+  "CmdOrCtrl+D": {
+    "ctrlKey": true,
+    "key": "d"
+  },
+  "Control+Shift+I": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+  "Alt+Enter": {
+    "altKey": true,
+    "key": "enter",
+    "code": "Return"
+  },
+  "ctrl+r": {
+    "ctrlKey": true,
+    "key": "r"
+  },
+  "CommandOrControl+F4": {
+    "ctrlKey": true,
+    "key": "f4",
+    "code": "F4"
+  },
+  "CmdOrCtrl+Shift+b": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "b"
+  },
+  "a": {
+    "key": "a"
+  },
+  "CommandOrControl+Shift+i": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+  "alt+g": {
+    "altKey": true,
+    "key": "g"
+  },
+  "alt+e": {
+    "altKey": true,
+    "key": "e"
+  },
+  "CommandOrControl+Alt+Shift+I": {
+    "ctrlKey": true,
+    "altKey": true,
+    "shiftKey": true,
+    "key": "i"
+  },
+  "Space": {
+    "key": "space",
+    "code": " "
+  },
+  "CmdOrCtrl+Alt+Z": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "z"
+  },
+  "CmdOrCtrl+f11": {
+    "ctrlKey": true,
+    "key": "f11",
+    "code": "F11"
+  },
+  "CmdOrCtrl+f12": {
+    "ctrlKey": true,
+    "key": "f12",
+    "code": "F12"
+  },
+  "ctrl+alt+r": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "r"
+  },
+  "Control+Shift+C": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "c"
+  },
+  "Cmd+Option+Left": {
+    "metaKey": true,
+    "altKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "space": {
+    "key": "space",
+    "code": " "
+  },
+  "CmdOrCtrl+2": {
+    "ctrlKey": true,
+    "key": "2"
+  },
+  "CommandOrControl+Shift+E": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "e"
+  },
+  "h": {
+    "key": "h"
+  },
+  "l": {
+    "key": "l"
+  },
+  "CmdOrCtrl+N": {
+    "ctrlKey": true,
+    "key": "n"
+  },
+  "CMD+Alt+C": {
+    "metaKey": true,
+    "altKey": true,
+    "key": "c"
+  },
+  "CmdOrCtrl+C": {
+    "ctrlKey": true,
+    "key": "c"
+  },
+  "CmdOrCtrl+Y": {
+    "ctrlKey": true,
+    "key": "y"
+  },
+  "ctrl+alt+h": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "h"
+  },
+  "CommandOrControl+ESC": {
+    "ctrlKey": true,
+    "key": "esc",
+    "code": "Escape"
+  },
+  "CommandOrControl+1": {
+    "ctrlKey": true,
+    "key": "1"
+  },
+  "Control+R": {
+    "ctrlKey": true,
+    "key": "r"
+  },
+  "Super+Y": {
+    "metaKey": true,
+    "key": "y"
+  },
+  "Ctrl+Shift+1": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "1"
+  },
+  "Ctrl+Alt+Cmd+F": {
+    "ctrlKey": true,
+    "altKey": true,
+    "metaKey": true,
+    "key": "f"
+  },
+  "volumeUp": {
+    "key": "volumeup",
+    "code": "AudioVolumeUp"
+  },
+  "Alt+Up": {
+    "altKey": true,
+    "key": "up",
+    "code": "ArrowUp"
+  },
+  "CmdOrCtrl+Alt+Left": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "CmdOrCtrl+Alt+Right": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "Enter": {
+    "key": "enter",
+    "code": "Return"
+  },
+  "Command+Y": {
+    "metaKey": true,
+    "key": "y"
+  },
+  "ctrl+o": {
+    "ctrlKey": true,
+    "key": "o"
+  },
+  "cmd+alt+k": {
+    "metaKey": true,
+    "altKey": true,
+    "key": "k"
+  },
+  "ctrl+alt+a": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "a"
+  },
+  "CommandOrControl+Alt+Shift+Up": {
+    "ctrlKey": true,
+    "altKey": true,
+    "shiftKey": true,
+    "key": "up",
+    "code": "ArrowUp"
+  },
+  "CommandOrControl+Alt+Shift+Right": {
+    "ctrlKey": true,
+    "altKey": true,
+    "shiftKey": true,
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "Control+F": {
+    "ctrlKey": true,
+    "key": "f"
+  },
+  "CmdOrCtrl+Left": {
+    "ctrlKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "ctrl+alt+j": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "j"
+  },
+  "CommandOrControl+Shift+M": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "m"
+  },
+  "Control+Alt+I": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "i"
+  },
+  "Ctrl+T": {
+    "ctrlKey": true,
+    "key": "t"
+  },
+  "Command+Shift+1": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "1"
+  },
+  "Command+i": {
+    "metaKey": true,
+    "key": "i"
+  },
+  "Shift+Alt+Enter": {
+    "shiftKey": true,
+    "altKey": true,
+    "key": "enter",
+    "code": "Return"
+  },
+  "Shift+Alt+Space": {
+    "shiftKey": true,
+    "altKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "ctrl+alt+m": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "m"
+  },
+  "CommandOrControl+0": {
+    "ctrlKey": true,
+    "key": "0"
+  },
+  "ctrl+alt+1": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "1"
+  },
+  "ctrl+alt+2": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "2"
+  },
+  "ctrl+alt+3": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "3"
+  },
+  "Alt+Q": {
+    "altKey": true,
+    "key": "q"
+  },
+  "Alt+W": {
+    "altKey": true,
+    "key": "w"
+  },
+  "CommandOrControl+Alt+I": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "i"
+  },
+  "Alt+Shift+Up": {
+    "altKey": true,
+    "shiftKey": true,
+    "key": "up",
+    "code": "ArrowUp"
+  },
+  "Alt+F4": {
+    "altKey": true,
+    "key": "f4",
+    "code": "F4"
+  },
+  "Control+Command+S": {
+    "ctrlKey": true,
+    "metaKey": true,
+    "key": "s"
+  },
+  "ctrl+shift+d": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "d"
+  },
+  "cmdOrCtrl+f11": {
+    "ctrlKey": true,
+    "key": "f11",
+    "code": "F11"
+  },
+  "cmdOrCtrl+f12": {
+    "ctrlKey": true,
+    "key": "f12",
+    "code": "F12"
+  },
+  "Cmd+Alt+T": {
+    "metaKey": true,
+    "altKey": true,
+    "key": "t"
+  },
+  "R": {
+    "key": "r"
+  },
+  "Q": {
+    "key": "q"
+  },
+  "CommandOrControl+Shift+K": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "k"
+  },
+  "CmdOrCtrl+": {
+    "ctrlKey": true
+  },
+
+  "Control+Shift+X": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "x"
+  },
+  "Shift+PageUp": {
+    "shiftKey": true,
+    "key": "pageup",
+    "code": "PageUp"
+  },
+  "PageDown": {
+    "key": "pagedown",
+    "code": "PageDown"
+  },
+  "ctrl+alt+i": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "i"
+  },
+  "ctrl+alt+shift+y": {
+    "ctrlKey": true,
+    "altKey": true,
+    "shiftKey": true,
+    "key": "y"
+  },
+  "escape": {
+    "key": "escape",
+    "code": "Escape"
+  },
+  "Command+O": {
+    "metaKey": true,
+    "key": "o"
+  },
+  "ctrl+alt+Enter": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "enter",
+    "code": "Return"
+  },
+  "CommandOrControl+C": {
+    "ctrlKey": true,
+    "key": "c"
+  },
+  "CommandOrControl+8": {
+    "ctrlKey": true,
+    "key": "8"
+  },
+  "CommandOrControl+9": {
+    "ctrlKey": true,
+    "key": "9"
+  },
+  "CmdOrCtrl+M": {
+    "ctrlKey": true,
+    "key": "m"
+  },
+  "Control+Command+g": {
+    "ctrlKey": true,
+    "metaKey": true,
+    "key": "g"
+  },
+  "Ctrl+Space": {
+    "ctrlKey": true,
+    "key": "space",
+    "code": " "
+  },
+  "Command+Control+Alt+G": {
+    "metaKey": true,
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "g"
+  },
+  "Control+W": {
+    "ctrlKey": true,
+    "key": "w"
+  },
+  "Super+Shift+": {
+    "metaKey": true,
+    "shiftKey": true
+  },
+  "CommandOrControl+Shift+P": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "p"
+  },
+  "command+q": {
+    "metaKey": true,
+    "key": "q"
+  },
+  "command+shift+q": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "q"
+  },
+  "Alt+Z": {
+    "altKey": true,
+    "key": "z"
+  },
+  "Alt+F12": {
+    "altKey": true,
+    "key": "f12",
+    "code": "F12"
+  },
+  "CommandOrControl+A": {
+    "ctrlKey": true,
+    "key": "a"
+  },
+  "Alt+CmdOrCtrl+M": {
+    "altKey": true,
+    "ctrlKey": true,
+    "key": "m"
+  },
+  "alt+w": {
+    "altKey": true,
+    "key": "w"
+  },
+  "Control+Right": {
+    "ctrlKey": true,
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "Control+Left": {
+    "ctrlKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "ctrl+shift+n": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "n"
+  },
+  "ctrl+shift+p": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "p"
+  },
+  "CommandOrControl+U": {
+    "ctrlKey": true,
+    "key": "u"
+  },
+  "Ctrl+Alt+U": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "u"
+  },
+  "CmdorCtrl+Alt+C": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "c"
+  },
+  "CommandOrControl+M": {
+    "ctrlKey": true,
+    "key": "m"
+  },
+  "ctrl+shift+j": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "j"
+  },
+  "enter": {
+    "key": "enter",
+    "code": "Return"
+  },
+  "Command+Left": {
+    "metaKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "Control+Shift+6": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "6"
+  },
+  "Control+Shift+5": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "5"
+  },
+  "Alt+D": {
+    "altKey": true,
+    "key": "d"
+  },
+  "Command+Control+Shift+D": {
+    "metaKey": true,
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "d"
+  },
+  "ctrl+right": {
+    "ctrlKey": true,
+    "key": "right",
+    "code": "ArrowRight"
+  },
+  "ctrl+down": {
+    "ctrlKey": true,
+    "key": "down",
+    "code": "ArrowDown"
+  },
+  "ctrl+s": {
+    "ctrlKey": true,
+    "key": "s"
+  },
+  "ctrl+shift+3": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "3"
+  },
+  "ctrl+shift+4": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "4"
+  },
+  "CommandOrControl+Alt+F": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "f"
+  },
+  "up": {
+    "key": "up",
+    "code": "ArrowUp"
+  },
+  "Command+Control+M": {
+    "metaKey": true,
+    "ctrlKey": true,
+    "key": "m"
+  },
+  "Shift+Ctrl+Alt+Super+6": {
+    "shiftKey": true,
+    "ctrlKey": true,
+    "altKey": true,
+    "metaKey": true,
+    "key": "6"
+  },
+  "Shift+Ctrl+Alt+Super+7": {
+    "shiftKey": true,
+    "ctrlKey": true,
+    "altKey": true,
+    "metaKey": true,
+    "key": "7"
+  },
+  "CommandOrControl+Shift+0": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "0"
+  },
+  "Ctrl+y": {
+    "ctrlKey": true,
+    "key": "y"
+  },
+  "f": {
+    "key": "f"
+  },
+  "ctrl+alt+s": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "s"
+  },
+  "ctrl+alt+e": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "e"
+  },
+  "Cmd+Ctrl+f": {
+    "metaKey": true,
+    "ctrlKey": true,
+    "key": "f"
+  },
+  "Ctrl+F12": {
+    "ctrlKey": true,
+    "key": "f12",
+    "code": "F12"
+  },
+  "Ctrl+Alt+X": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "x"
+  },
+  "Super+D": {
+    "metaKey": true,
+    "key": "d"
+  },
+  "Alt+Tab": {
+    "altKey": true,
+    "key": "tab",
+    "code": "Tab"
+  },
+  "CmdOrCtrl+Alt+d": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "d"
+  },
+  "Ctrl+N": {
+    "ctrlKey": true,
+    "key": "n"
+  },
+  "Ctrl+Shift+N": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "n"
+  },
+  "CommandOrControl+Shift+k": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "k"
+  },
+  "ctrl+esc": {
+    "ctrlKey": true,
+    "key": "esc",
+    "code": "Escape"
+  },
+  "CmdOrCtrl+Shift+J": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "j"
+  },
+  "CommandOrControl+T": {
+    "ctrlKey": true,
+    "key": "t"
+  },
+  "ctrl+t": {
+    "ctrlKey": true,
+    "key": "t"
+  },
+  "CommandOrControl+Alt+left": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "left",
+    "code": "ArrowLeft"
+  },
+  "ctrl+enter": {
+    "ctrlKey": true,
+    "key": "enter",
+    "code": "Return"
+  },
+  "CommandOrControl+Shift+L": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "l"
+  },
+  "CommandOrControl+Shift+C": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "c"
+  },
+  "Ctrl+Shift+P": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "p"
+  },
+  "CommandOrControl+Alt+G": {
+    "ctrlKey": true,
+    "altKey": true,
+    "key": "g"
+  },
+  "Command+Shift+A": {
+    "metaKey": true,
+    "shiftKey": true,
+    "key": "a"
+  },
+  "CommandOrControl+Z": {
+    "ctrlKey": true,
+    "key": "z"
+  },
+  "CmdOrCtrl+shift+c": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "c"
+  },
+  "CmdOrCtrl+shift+v": {
+    "ctrlKey": true,
+    "shiftKey": true,
+    "key": "v"
+  },
+  "Control+P": {
+    "ctrlKey": true,
+    "key": "p"
+  }
+}

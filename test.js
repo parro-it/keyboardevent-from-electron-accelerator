@@ -31,6 +31,17 @@ test('CmdOrCtrl+v', t => {
 	});
 });
 
+for (let i = 1; i <= 24; i++) {
+	test(`F${i}`, t => {
+		const event = toKeyEvent(`Ctrl+F${i}`);
+		t.deepEqual(event, {
+			ctrlKey: true,
+			key: `f${i}`,
+			code: `F${i}`
+		});
+	});
+}
+
 test('Control+Alt+Delete', t => {
 	const event = toKeyEvent('Control+Alt+Delete');
 
@@ -200,7 +211,19 @@ test('handle keyCode', t => {
 	});
 });
 
-accelerators.forEach(accelerator => test(`Convert ${accelerator}`, t => {
-	toKeyEvent(accelerator);
-	t.is('silly', 'silly');
+/* Used to generate fixture
+const res = {};
+let i = 0;
+*/
+
+Object.keys(accelerators).forEach(accelerator => test(`Convert ${accelerator}`, t => {
+	const ev = toKeyEvent(accelerator);
+	/* Used to generate fixture
+	res[accelerator] = ev;
+	i++;
+	if (i === accelerators.length) {
+		console.log(JSON.stringify(res, null, '\t').slice(1, -1) + ',');
+	}
+	*/
+	t.deepEqual(ev, accelerators[accelerator]);
 }));

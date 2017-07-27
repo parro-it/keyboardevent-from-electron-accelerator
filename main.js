@@ -1,5 +1,5 @@
 const modifiers = /^(CommandOrControl|CmdOrCtrl|Command|Cmd|Control|Ctrl|Alt|Option|AltGr|Shift|Super)/i;
-const keyCodes = /^(Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen|[0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]']|F1*[1-9]|F10|F2[0-4])/i;
+const keyCodes = /^(Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen|F24|F23|F22|F21|F20|F19|F18|F17|F16|F15|F14|F13|F12|F11|F10|F9|F8|F7|F6|F5|F4|F3|F2|F1|[0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]'])/i;
 
 export function reduceModifier({accelerator, event}, modifier) {
 	switch (modifier) {
@@ -127,6 +127,11 @@ const domKeys = Object.assign(Object.create(null), {
 	mediaplaypause: 'MediaPlayPause',
 	printscreen: 'PrintScreen'
 });
+
+// Add function keys
+for (let i = 1; i <= 24; i++) {
+	domKeys[`f${i}`] = `F${i}`;
+}
 
 export function reduceCode({accelerator, event}, {code, key}) {
 	return {
