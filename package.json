@@ -1,6 +1,6 @@
 {
   "name": "keyboardevent-from-electron-accelerator",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Transform an Electron Accelerator string into a DOM KeyboardEvent.",
   "repository": "parro-it/keyboardevent-from-electron-accelerator",
   "author": "Andrea <andrea@parro.it>",
