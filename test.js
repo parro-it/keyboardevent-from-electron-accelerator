@@ -201,7 +201,6 @@ test('handle keyCode', t => {
 });
 
 accelerators.forEach(accelerator => test(`Convert ${accelerator}`, t => {
-	t.notThrows(() => {
-		toKeyEvent(accelerator);
-	});
+	toKeyEvent(accelerator);
+	t.is('silly', 'silly');
 }));
