@@ -7,8 +7,7 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "example.js",
-    "main.js"
+    "example.js"
   ],
   "scripts": {
     "test": "rollup -c && ava && xo --ignore example.js --ignore index.js",
@@ -16,7 +15,6 @@
   },
   "keywords": [],
   "tonicExampleFilename": "example.js",
-  "module": "main.js",
   "devDependencies": {
     "ava": "^0.19.1",
     "documentation": "^4.0.0-rc.1",
