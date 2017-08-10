@@ -1490,9 +1490,21 @@
     "key": "c"
   },
   "CmdOrCtrl+shift+v": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "v"
+    "linux": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "v"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "v"
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "v"
+    }
   },
   "Control+P": {
     "ctrlKey": true,

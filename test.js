@@ -225,5 +225,13 @@ Object.keys(accelerators).forEach(accelerator => test(`Convert ${accelerator}`, 
 		console.log(JSON.stringify(res, null, '\t').slice(1, -1) + ',');
 	}
 	*/
-	t.deepEqual(ev, accelerators[accelerator]);
+	const acc = accelerators[accelerator];
+	const expected = hasOSCustomResult(acc) ? acc[process.platform] : acc;
+	t.deepEqual(ev, expected);
 }));
+
+function hasOSCustomResult(expected) {
+	return Reflect.has(expected, 'linux') ||
+		Reflect.has(expected, 'darwin') ||
+		Reflect.has(expected, 'win32');
+}
