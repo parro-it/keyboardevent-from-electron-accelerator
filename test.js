@@ -25,10 +25,17 @@ test('ctrl+shift+v', t => {
 
 test('CmdOrCtrl+v', t => {
 	const event = toKeyEvent('CmdOrCtrl+v');
-	t.deepEqual(event, {
-		ctrlKey: true,
-		key: 'v'
-	});
+	if (process.platform === 'darwin') {
+		t.deepEqual(event, {
+			metaKey: true,
+			key: 'v'
+		});
+	} else {
+		t.deepEqual(event, {
+			ctrlKey: true,
+			key: 'v'
+		});
+	}
 });
 
 for (let i = 1; i <= 24; i++) {
