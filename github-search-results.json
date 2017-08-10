@@ -58,7 +58,7 @@
       "code": "F12"
     },
     "darwin": {
-      "ctrlKey": true,
+      "metaKey": true,
       "key": "f12",
       "code": "F12"
     }
@@ -949,7 +949,7 @@
     },
     "darwin": {
       "altKey": true,
-      "ctrlKey": true,
+      "metaKey": true,
       "key": "m"
     }
   },
@@ -1141,7 +1141,7 @@
       "key": "j"
     },
     "darwin": {
-      "ctrlKey": true,
+      "metaKey": true,
       "shiftKey": true,
       "key": "j"
     }
