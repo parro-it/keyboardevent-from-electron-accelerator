@@ -47,9 +47,21 @@
     "key": "v"
   },
   "CmdOrCtrl+F12": {
-    "ctrlKey": true,
-    "key": "f12",
-    "code": "F12"
+    "linux": {
+      "ctrlKey": true,
+      "key": "f12",
+      "code": "F12"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "f12",
+      "code": "F12"
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "key": "f12",
+      "code": "F12"
+    }
   },
 
   "Alt+A": {
@@ -126,11 +138,6 @@
   },
   "Alt+": {
     "altKey": true
-  },
-  "Shift+CommandOrControl+R": {
-    "shiftKey": true,
-    "ctrlKey": true,
-    "key": "r"
   },
   "medianexttrack": {
     "key": "medianexttrack",
@@ -242,11 +249,6 @@
     "ctrlKey": true,
     "key": "volumedown",
     "code": "AudioVolumeDown"
-  },
-  "Shift+CommandOrControl+O": {
-    "shiftKey": true,
-    "ctrlKey": true,
-    "key": "o"
   },
   "Ctrl+Alt+D": {
     "ctrlKey": true,
@@ -495,7 +497,7 @@
       "key": "1"
     },
     "darwin": {
-      "ctrlKey": true,
+      "metaKey": true,
       "shiftKey": true,
       "key": "1"
     }
@@ -710,13 +712,7 @@
     "altKey": true,
     "key": "a"
   },
-  "CommandOrControl+Alt+Shift+Up": {
-    "ctrlKey": true,
-    "altKey": true,
-    "shiftKey": true,
-    "key": "up",
-    "code": "ArrowUp"
-  },
+
   "CommandOrControl+Alt+Shift+Right": {
     "linux": {
       "ctrlKey": true,
@@ -743,11 +739,6 @@
   "Control+F": {
     "ctrlKey": true,
     "key": "f"
-  },
-  "CmdOrCtrl+Left": {
-    "ctrlKey": true,
-    "key": "left",
-    "code": "ArrowLeft"
   },
   "ctrl+alt+j": {
     "ctrlKey": true,
@@ -861,9 +852,7 @@
   "Q": {
     "key": "q"
   },
-  "CmdOrCtrl+": {
-    "ctrlKey": true
-  },
+
 
   "Control+Shift+X": {
     "ctrlKey": true,
@@ -904,10 +893,7 @@
     "key": "enter",
     "code": "Return"
   },
-  "CmdOrCtrl+M": {
-    "ctrlKey": true,
-    "key": "m"
-  },
+
   "Control+Command+g": {
     "ctrlKey": true,
     "metaKey": true,
@@ -951,9 +937,21 @@
     "code": "F12"
   },
   "Alt+CmdOrCtrl+M": {
-    "altKey": true,
-    "ctrlKey": true,
-    "key": "m"
+    "linux": {
+      "altKey": true,
+      "ctrlKey": true,
+      "key": "m"
+    },
+    "win32": {
+      "altKey": true,
+      "ctrlKey": true,
+      "key": "m"
+    },
+    "darwin": {
+      "altKey": true,
+      "ctrlKey": true,
+      "key": "m"
+    }
   },
   "alt+w": {
     "altKey": true,
