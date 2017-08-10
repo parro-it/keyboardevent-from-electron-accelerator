@@ -6,10 +6,7 @@
     "key": "medianexttrack",
     "code": "MediaTrackNext"
   },
-  "CommandOrControl+P": {
-    "ctrlKey": true,
-    "key": "p"
-  },
+
   "n": {
     "key": "n"
   },
@@ -39,18 +36,12 @@
   "D": {
     "key": "d"
   },
-  "CommandOrControl+X": {
-    "ctrlKey": true,
-    "key": "x"
-  },
+
   "MediaPreviousTrack": {
     "key": "mediaprevioustrack",
     "code": "MediaTrackPrevious"
   },
-  "CommandOrControl+L": {
-    "ctrlKey": true,
-    "key": "l"
-  },
+
   "Ctrl+V": {
     "ctrlKey": true,
     "key": "v"
@@ -60,11 +51,7 @@
     "key": "f12",
     "code": "F12"
   },
-  "CommandOrControl+Alt+Q": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "q"
-  },
+
   "Alt+A": {
     "altKey": true,
     "key": "a"
@@ -90,29 +77,8 @@
     "metaKey": true,
     "key": "i"
   },
-  "Command+Shift+F": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "f"
-  },
-  "CommandOrControl+D": {
-    "ctrlKey": true,
-    "key": "d"
-  },
-  "CommandOrControl+Alt+K": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "k"
-  },
-  "CommandOrControl+S": {
-    "ctrlKey": true,
-    "key": "s"
-  },
-  "CommandOrControl+Shift+I": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "i"
-  },
+
+
 
   "Control+1": {
     "ctrlKey": true,
@@ -122,35 +88,13 @@
     "ctrlKey": true,
     "key": "2"
   },
-  "CommandOrControl+Alt+J": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "j"
-  },
+
   "cmd+alt+i": {
     "metaKey": true,
     "altKey": true,
     "key": "i"
   },
-  "CommandOrControl+Up": {
-    "ctrlKey": true,
-    "key": "up",
-    "code": "ArrowUp"
-  },
-  "CommandOrControl+Down": {
-    "ctrlKey": true,
-    "key": "down",
-    "code": "ArrowDown"
-  },
-  "CmdOrCtrl+R": {
-    "ctrlKey": true,
-    "key": "r"
-  },
-  "CmdOrCtrl+Shift+R": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "r"
-  },
+
   "Command+Option+I": {
     "metaKey": true,
     "altKey": true,
@@ -160,11 +104,7 @@
     "key": "esc",
     "code": "Escape"
   },
-  "CommandOrControl+Shift+8": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "8"
-  },
+
   "Control+Super+K": {
     "ctrlKey": true,
     "metaKey": true,
@@ -175,21 +115,7 @@
     "metaKey": true,
     "key": "l"
   },
-  "CommandOrControl+B": {
-    "ctrlKey": true,
-    "key": "b"
-  },
-  "CommandOrControl+I": {
-    "ctrlKey": true,
-    "key": "i"
-  },
-  "CommandOrControl+": {
-    "ctrlKey": true
-  },
-  "CmdOrCtrl+w": {
-    "ctrlKey": true,
-    "key": "w"
-  },
+
   "ctrl+x": {
     "ctrlKey": true,
     "key": "x"
@@ -214,35 +140,15 @@
     "key": "mediaplaypause",
     "code": "MediaPlayPause"
   },
-  "CommandOrControl+R": {
-    "ctrlKey": true,
-    "key": "r"
-  },
-  "CommandOrControl+Q": {
-    "ctrlKey": true,
-    "key": "q"
-  },
-  "CommandOrControl+F": {
-    "ctrlKey": true,
-    "key": "f"
-  },
+
+
   "Alt+Space": {
     "altKey": true,
     "key": "space",
     "code": " "
   },
-  "CmdOrCtrl+Shift+Space": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "space",
-    "code": " "
-  },
-  "CmdOrCtrl+Shift+Right": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "right",
-    "code": "ArrowRight"
-  },
+
+
   "Alt+U": {
     "altKey": true,
     "key": "u"
@@ -267,14 +173,7 @@
     "key": "volumeup",
     "code": "AudioVolumeUp"
   },
-  "CommandOrControl+N": {
-    "ctrlKey": true,
-    "key": "n"
-  },
-  "CommandOrControl+O": {
-    "ctrlKey": true,
-    "key": "o"
-  },
+
   "Control+a": {
     "ctrlKey": true,
     "key": "a"
@@ -291,31 +190,16 @@
     "ctrlKey": true,
     "key": "m"
   },
-  "CommandOrControl+Alt+D": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "d"
-  },
+
   "Cmd+Ctrl+Alt+D": {
     "metaKey": true,
     "ctrlKey": true,
     "altKey": true,
     "key": "d"
   },
-  "CmdOrCtrl+T": {
-    "ctrlKey": true,
-    "key": "t"
-  },
-  "CmdOrCtrl+Shift+d": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "d"
-  },
-  "CmdOrCtrl+Shift+r": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "r"
-  },
+
+
+
   "Ctrl+Alt+Cmd+D": {
     "ctrlKey": true,
     "altKey": true,
@@ -327,22 +211,14 @@
     "shiftKey": true,
     "key": "c"
   },
-  "CommandOrControl+Shift+5": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "5"
-  },
+
   "Ctrl+Shift+Space": {
     "ctrlKey": true,
     "shiftKey": true,
     "key": "space",
     "code": " "
   },
-  "CommandOrControl+Shift+3": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "3"
-  },
+
   "ctrl+shift+space": {
     "ctrlKey": true,
     "shiftKey": true,
@@ -377,11 +253,7 @@
     "altKey": true,
     "key": "d"
   },
-  "CommandOrControl+Alt+k+b": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "b"
-  },
+
   "VolumeDown": {
     "key": "volumedown",
     "code": "AudioVolumeDown"
@@ -405,14 +277,7 @@
     "altKey": true,
     "key": "1"
   },
-  "CommandOrControl+E": {
-    "ctrlKey": true,
-    "key": "e"
-  },
-  "CommandOrControl+Y": {
-    "ctrlKey": true,
-    "key": "y"
-  },
+
   "ctrl+alt+d": {
     "ctrlKey": true,
     "altKey": true,
@@ -422,21 +287,8 @@
     "key": "mediastop",
     "code": "MediaStop"
   },
-  "CommandOrControl+Alt+Right": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "right",
-    "code": "ArrowRight"
-  },
-  "CmdOrCtrl+p": {
-    "ctrlKey": true,
-    "key": "p"
-  },
-  "CmdOrCtrl+Shift+D": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "d"
-  },
+
+
   "cmd+h": {
     "metaKey": true,
     "key": "h"
@@ -455,11 +307,7 @@
     "shiftKey": true,
     "key": "2"
   },
-  "CommandOrControl+Space": {
-    "ctrlKey": true,
-    "key": "space",
-    "code": " "
-  },
+
   "ctrl+1": {
     "ctrlKey": true,
     "key": "1"
@@ -468,26 +316,7 @@
     "ctrlKey": true,
     "key": "2"
   },
-  "CommandOrControl+Shift+D": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "d"
-  },
-  "CommandOrControl+Alt+T": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "t"
-  },
-  "CommandOrControl+Shift+H": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "h"
-  },
-  "CommandOrControl+Alt+C": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "c"
-  },
+
   "Escape": {
     "key": "escape",
     "code": "Escape"
@@ -497,40 +326,12 @@
     "key": "space",
     "code": " "
   },
-  "CmdOrCtrl+A": {
-    "ctrlKey": true,
-    "key": "a"
-  },
-  "CmdOrCtrl+S": {
-    "ctrlKey": true,
-    "key": "s"
-  },
-  "CmdOrCtrl+1": {
-    "ctrlKey": true,
-    "key": "1"
-  },
-  "CommandOrControl+G": {
-    "ctrlKey": true,
-    "key": "g"
-  },
-  "CmdOrCtrl+Shift+i": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "i"
-  },
+
+
   "ctrl+": {
     "ctrlKey": true
   },
-  "CommandOrControl+Shift+Q": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "q"
-  },
-  "CommandOrControl+Shift+W": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "w"
-  },
+
   "Control+S": {
     "ctrlKey": true,
     "key": "s"
@@ -538,22 +339,14 @@
   "s": {
     "key": "s"
   },
-  "CommandOrControl+Alt+H": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "h"
-  },
+
   "Control+": {
     "ctrlKey": true
   },
   "Ctrl+": {
     "ctrlKey": true
   },
-  "CmdOrCtrl+Shift+S": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "s"
-  },
+
   "ctrl+e": {
     "ctrlKey": true,
     "key": "e"
@@ -574,11 +367,7 @@
     "key": "space",
     "code": " "
   },
-  "CommandOrControl+Tab": {
-    "ctrlKey": true,
-    "key": "tab",
-    "code": "Tab"
-  },
+
   "c": {
     "key": "c"
   },
@@ -596,39 +385,11 @@
     "key": "left",
     "code": "ArrowLeft"
   },
-  "CommandOrControl+f11": {
-    "ctrlKey": true,
-    "key": "f11",
-    "code": "F11"
-  },
+
   "Ctrl+Alt+o": {
     "ctrlKey": true,
     "altKey": true,
     "key": "o"
-  },
-  "CommandOrControl+Alt+O": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "o"
-  },
-  "CommandOrControl+q": {
-    "ctrlKey": true,
-    "key": "q"
-  },
-  "CommandOrControl+alt+8": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "8"
-  },
-  "CommandOrControl+alt+9": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "9"
-  },
-  "CommandOrControl+Alt+E": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "e"
   },
   "Command+Control+Alt+0": {
     "metaKey": true,
@@ -652,9 +413,21 @@
     "code": "Return"
   },
   "CommandOrControl+Escape": {
-    "ctrlKey": true,
-    "key": "escape",
-    "code": "Escape"
+    "linux": {
+      "ctrlKey": true,
+      "key": "escape",
+      "code": "Escape"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "escape",
+      "code": "Escape"
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "escape",
+      "code": "Escape"
+    }
   },
   "Control+b": {
     "ctrlKey": true,
@@ -673,11 +446,6 @@
     "ctrlKey": true,
     "key": "l"
   },
-  "Shift+CmdOrCtrl+C": {
-    "shiftKey": true,
-    "ctrlKey": true,
-    "key": "c"
-  },
   "Ctrl+O": {
     "ctrlKey": true,
     "key": "o"
@@ -690,7 +458,7 @@
     "ctrlKey": true,
     "key": "w"
   },
-  "CommandOrControl+Shift+Space": {
+  "Control+Shift+Space": {
     "ctrlKey": true,
     "shiftKey": true,
     "key": "space",
@@ -716,24 +484,26 @@
     "key": "m"
   },
   "CommandOrControl+shift+1": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "1"
-  },
-  "CommandOrControl+shift+2": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "2"
+    "linux": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "1"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "1"
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "1"
+    }
   },
   "Command+Shift+X": {
     "metaKey": true,
     "shiftKey": true,
     "key": "x"
-  },
-  "CommandOrControl+Shift+R": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "r"
   },
   "Alt+Command+K": {
     "altKey": true,
@@ -752,31 +522,24 @@
     "altKey": true,
     "key": "g"
   },
-  "CmdOrCtrl+Alt+D": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "d"
-  },
   "Control+Space": {
     "ctrlKey": true,
     "key": "space",
     "code": " "
   },
-  "CommandOrControl+3": {
-    "ctrlKey": true,
-    "key": "3"
-  },
   "CommandOrControl+H": {
-    "ctrlKey": true,
-    "key": "h"
-  },
-  "CmdOrCtrl+O": {
-    "ctrlKey": true,
-    "key": "o"
-  },
-  "CmdOrCtrl+D": {
-    "ctrlKey": true,
-    "key": "d"
+    "linux": {
+      "ctrlKey": true,
+      "key": "h"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "h"
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "h"
+    }
   },
   "Control+Shift+I": {
     "ctrlKey": true,
@@ -792,23 +555,25 @@
     "ctrlKey": true,
     "key": "r"
   },
-  "CommandOrControl+F4": {
-    "ctrlKey": true,
-    "key": "f4",
-    "code": "F4"
-  },
   "CmdOrCtrl+Shift+b": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "b"
+    "linux": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "b"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "b"
+    },
+    "darwin": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "b"
+    }
   },
   "a": {
     "key": "a"
-  },
-  "CommandOrControl+Shift+i": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "i"
   },
   "alt+g": {
     "altKey": true,
@@ -819,29 +584,28 @@
     "key": "e"
   },
   "CommandOrControl+Alt+Shift+I": {
-    "ctrlKey": true,
-    "altKey": true,
-    "shiftKey": true,
-    "key": "i"
+    "linux": {
+      "ctrlKey": true,
+      "altKey": true,
+      "shiftKey": true,
+      "key": "i"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "altKey": true,
+      "shiftKey": true,
+      "key": "i"
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "shiftKey": true,
+      "key": "i"
+    }
   },
   "Space": {
     "key": "space",
     "code": " "
-  },
-  "CmdOrCtrl+Alt+Z": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "z"
-  },
-  "CmdOrCtrl+f11": {
-    "ctrlKey": true,
-    "key": "f11",
-    "code": "F11"
-  },
-  "CmdOrCtrl+f12": {
-    "ctrlKey": true,
-    "key": "f12",
-    "code": "F12"
   },
   "ctrl+alt+r": {
     "ctrlKey": true,
@@ -863,37 +627,16 @@
     "key": "space",
     "code": " "
   },
-  "CmdOrCtrl+2": {
-    "ctrlKey": true,
-    "key": "2"
-  },
-  "CommandOrControl+Shift+E": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "e"
-  },
   "h": {
     "key": "h"
   },
   "l": {
     "key": "l"
   },
-  "CmdOrCtrl+N": {
-    "ctrlKey": true,
-    "key": "n"
-  },
   "CMD+Alt+C": {
     "metaKey": true,
     "altKey": true,
     "key": "c"
-  },
-  "CmdOrCtrl+C": {
-    "ctrlKey": true,
-    "key": "c"
-  },
-  "CmdOrCtrl+Y": {
-    "ctrlKey": true,
-    "key": "y"
   },
   "ctrl+alt+h": {
     "ctrlKey": true,
@@ -901,13 +644,21 @@
     "key": "h"
   },
   "CommandOrControl+ESC": {
-    "ctrlKey": true,
-    "key": "esc",
-    "code": "Escape"
-  },
-  "CommandOrControl+1": {
-    "ctrlKey": true,
-    "key": "1"
+    "linux": {
+      "ctrlKey": true,
+      "key": "esc",
+      "code": "Escape"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "esc",
+      "code": "Escape"
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "esc",
+      "code": "Escape"
+    }
   },
   "Control+R": {
     "ctrlKey": true,
@@ -936,18 +687,6 @@
     "altKey": true,
     "key": "up",
     "code": "ArrowUp"
-  },
-  "CmdOrCtrl+Alt+Left": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "left",
-    "code": "ArrowLeft"
-  },
-  "CmdOrCtrl+Alt+Right": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "right",
-    "code": "ArrowRight"
   },
   "Enter": {
     "key": "enter",
@@ -979,11 +718,27 @@
     "code": "ArrowUp"
   },
   "CommandOrControl+Alt+Shift+Right": {
-    "ctrlKey": true,
-    "altKey": true,
-    "shiftKey": true,
-    "key": "right",
-    "code": "ArrowRight"
+    "linux": {
+      "ctrlKey": true,
+      "altKey": true,
+      "shiftKey": true,
+      "key": "right",
+      "code": "ArrowRight"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "altKey": true,
+      "shiftKey": true,
+      "key": "right",
+      "code": "ArrowRight"
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "shiftKey": true,
+      "key": "right",
+      "code": "ArrowRight"
+    }
   },
   "Control+F": {
     "ctrlKey": true,
@@ -998,11 +753,6 @@
     "ctrlKey": true,
     "altKey": true,
     "key": "j"
-  },
-  "CommandOrControl+Shift+M": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "m"
   },
   "Control+Alt+I": {
     "ctrlKey": true,
@@ -1039,10 +789,6 @@
     "altKey": true,
     "key": "m"
   },
-  "CommandOrControl+0": {
-    "ctrlKey": true,
-    "key": "0"
-  },
   "ctrl+alt+1": {
     "ctrlKey": true,
     "altKey": true,
@@ -1066,11 +812,6 @@
     "altKey": true,
     "key": "w"
   },
-  "CommandOrControl+Alt+I": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "i"
-  },
   "Alt+Shift+Up": {
     "altKey": true,
     "shiftKey": true,
@@ -1092,15 +833,22 @@
     "shiftKey": true,
     "key": "d"
   },
-  "cmdOrCtrl+f11": {
-    "ctrlKey": true,
-    "key": "f11",
-    "code": "F11"
-  },
   "cmdOrCtrl+f12": {
-    "ctrlKey": true,
-    "key": "f12",
-    "code": "F12"
+    "linux": {
+      "ctrlKey": true,
+      "key": "f12",
+      "code": "F12"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "f12",
+      "code": "F12"
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "f12",
+      "code": "F12"
+    }
   },
   "Cmd+Alt+T": {
     "metaKey": true,
@@ -1112,11 +860,6 @@
   },
   "Q": {
     "key": "q"
-  },
-  "CommandOrControl+Shift+K": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "k"
   },
   "CmdOrCtrl+": {
     "ctrlKey": true
@@ -1161,18 +904,6 @@
     "key": "enter",
     "code": "Return"
   },
-  "CommandOrControl+C": {
-    "ctrlKey": true,
-    "key": "c"
-  },
-  "CommandOrControl+8": {
-    "ctrlKey": true,
-    "key": "8"
-  },
-  "CommandOrControl+9": {
-    "ctrlKey": true,
-    "key": "9"
-  },
   "CmdOrCtrl+M": {
     "ctrlKey": true,
     "key": "m"
@@ -1201,11 +932,6 @@
     "metaKey": true,
     "shiftKey": true
   },
-  "CommandOrControl+Shift+P": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "p"
-  },
   "command+q": {
     "metaKey": true,
     "key": "q"
@@ -1223,10 +949,6 @@
     "altKey": true,
     "key": "f12",
     "code": "F12"
-  },
-  "CommandOrControl+A": {
-    "ctrlKey": true,
-    "key": "a"
   },
   "Alt+CmdOrCtrl+M": {
     "altKey": true,
@@ -1257,23 +979,10 @@
     "shiftKey": true,
     "key": "p"
   },
-  "CommandOrControl+U": {
-    "ctrlKey": true,
-    "key": "u"
-  },
   "Ctrl+Alt+U": {
     "ctrlKey": true,
     "altKey": true,
     "key": "u"
-  },
-  "CmdorCtrl+Alt+C": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "c"
-  },
-  "CommandOrControl+M": {
-    "ctrlKey": true,
-    "key": "m"
   },
   "ctrl+shift+j": {
     "ctrlKey": true,
@@ -1303,12 +1012,6 @@
     "altKey": true,
     "key": "d"
   },
-  "Command+Control+Shift+D": {
-    "metaKey": true,
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "d"
-  },
   "ctrl+right": {
     "ctrlKey": true,
     "key": "right",
@@ -1332,11 +1035,6 @@
     "ctrlKey": true,
     "shiftKey": true,
     "key": "4"
-  },
-  "CommandOrControl+Alt+F": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "f"
   },
   "up": {
     "key": "up",
@@ -1362,9 +1060,21 @@
     "key": "7"
   },
   "CommandOrControl+Shift+0": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "0"
+    "linux": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "0"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "0"
+    },
+    "darwin": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "0"
+    }
   },
   "Ctrl+y": {
     "ctrlKey": true,
@@ -1407,11 +1117,6 @@
     "key": "tab",
     "code": "Tab"
   },
-  "CmdOrCtrl+Alt+d": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "d"
-  },
   "Ctrl+N": {
     "ctrlKey": true,
     "key": "n"
@@ -1421,34 +1126,65 @@
     "shiftKey": true,
     "key": "n"
   },
-  "CommandOrControl+Shift+k": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "k"
-  },
   "ctrl+esc": {
     "ctrlKey": true,
     "key": "esc",
     "code": "Escape"
   },
   "CmdOrCtrl+Shift+J": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "j"
+    "linux": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "j"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "j"
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "j"
+    }
   },
   "CommandOrControl+T": {
-    "ctrlKey": true,
-    "key": "t"
+    "linux": {
+      "ctrlKey": true,
+      "key": "t"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "t"
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "t"
+    }
   },
   "ctrl+t": {
     "ctrlKey": true,
     "key": "t"
   },
   "CommandOrControl+Alt+left": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "left",
-    "code": "ArrowLeft"
+    "linux": {
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "left",
+      "code": "ArrowLeft"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "left",
+      "code": "ArrowLeft"
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "left",
+      "code": "ArrowLeft"
+    }
   },
   "ctrl+enter": {
     "ctrlKey": true,
@@ -1456,14 +1192,21 @@
     "code": "Return"
   },
   "CommandOrControl+Shift+L": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "l"
-  },
-  "CommandOrControl+Shift+C": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "c"
+    "linux": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "l"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "shiftKey": true,
+      "key": "l"
+    },
+    "darwin": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "l"
+    }
   },
   "Ctrl+Shift+P": {
     "ctrlKey": true,
@@ -1471,9 +1214,21 @@
     "key": "p"
   },
   "CommandOrControl+Alt+G": {
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "g"
+    "linux": {
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "g"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "g"
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "g"
+    }
   },
   "Command+Shift+A": {
     "metaKey": true,
@@ -1481,13 +1236,18 @@
     "key": "a"
   },
   "CommandOrControl+Z": {
-    "ctrlKey": true,
-    "key": "z"
-  },
-  "CmdOrCtrl+shift+c": {
-    "ctrlKey": true,
-    "shiftKey": true,
-    "key": "c"
+    "linux": {
+      "ctrlKey": true,
+      "key": "z"
+    },
+    "win32": {
+      "ctrlKey": true,
+      "key": "z"
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "z"
+    }
   },
   "CmdOrCtrl+shift+v": {
     "linux": {
@@ -1501,7 +1261,7 @@
       "key": "v"
     },
     "darwin": {
-      "ctrlKey": true,
+      "metaKey": true,
       "shiftKey": true,
       "key": "v"
     }
