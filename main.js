@@ -105,6 +105,7 @@ export function reduceKey({accelerator, event}, key) {
 	if (key.length > 1 || event.key) {
 		throw new Error(`Unvalid keycode \`${key}\`.`);
 	}
+
 	return {
 		event: Object.assign({}, event, {key}),
 		accelerator: accelerator.trim().slice(key.length)
@@ -146,6 +147,10 @@ for (let i = 1; i <= 24; i++) {
 }
 
 export function reduceCode({accelerator, event}, {code, key}) {
+	if (event.code) {
+		throw new Error(`Duplicated keycode \`${key}\`.`);
+	}
+
 	return {
 		event: Object.assign({}, event, {key}, code ? {code} : null),
 		accelerator: accelerator.trim().slice((key && key.length) || 0)

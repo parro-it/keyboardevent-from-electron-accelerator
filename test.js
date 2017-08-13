@@ -203,6 +203,11 @@ test('Throw for multi-chars keycode that are not valid DOM KeyValues', t => {
 	t.is(err.message, 'Unvalid keycode `s`.');
 });
 
+test('Throw for multiples keycodes', t => {
+	const err = t.throws(() => toKeyEvent('Ctrl+VolumeUp+VolumeDown'));
+	t.is(err.message, 'Duplicated keycode `volumedown`.');
+});
+
 test('throw with double command', t => {
 	if (process.platform === 'darwin') {
 		const err = t.throws(() => reduceModifier({
