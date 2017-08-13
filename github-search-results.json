@@ -26,9 +26,17 @@
     "code": "ArrowDown"
   },
   "Cmd+Shift+Y": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "y"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "y"
+    }
   },
   "U": {
     "key": "u"
@@ -69,8 +77,16 @@
     "key": "a"
   },
   "Cmd+Y": {
-    "metaKey": true,
-    "key": "y"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "y"
+    }
   },
   "MediaPlayPause": {
     "key": "mediaplaypause",
@@ -85,12 +101,18 @@
     "code": "ArrowLeft"
   },
   "Alt+Command+I": {
-    "altKey": true,
-    "metaKey": true,
-    "key": "i"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "altKey": true,
+      "metaKey": true,
+      "key": "i"
+    }
   },
-
-
 
   "Control+1": {
     "ctrlKey": true,
@@ -102,15 +124,31 @@
   },
 
   "cmd+alt+i": {
-    "metaKey": true,
-    "altKey": true,
-    "key": "i"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "i"
+    }
   },
 
   "Command+Option+I": {
-    "metaKey": true,
-    "altKey": true,
-    "key": "i"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "i"
+    }
   },
   "Esc": {
     "key": "esc",
@@ -198,20 +236,36 @@
     "key": "m"
   },
 
-  "Cmd+Ctrl+Alt+D": {
-    "metaKey": true,
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "d"
+  "Cmd+Ctrl+Alt+D":{
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "d"
+    }
   },
 
 
 
   "Ctrl+Alt+Cmd+D": {
-    "ctrlKey": true,
-    "altKey": true,
-    "metaKey": true,
-    "key": "d"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "altKey": true,
+      "metaKey": true,
+      "key": "d"
+    }
   },
   "ctrl+shift+c": {
     "ctrlKey": true,
@@ -292,8 +346,16 @@
 
 
   "cmd+h": {
-    "metaKey": true,
-    "key": "h"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "h"
+    }
   },
   "ctrl+shift+1": {
     "ctrlKey": true,
@@ -364,10 +426,18 @@
     "code": "Escape"
   },
   "cmd+shift+space": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "space",
-    "code": " "
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "space",
+      "code": " "
+    }
   },
 
   "c": {
@@ -394,10 +464,18 @@
     "key": "o"
   },
   "Command+Control+Alt+0": {
-    "metaKey": true,
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "0"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "0"
+    }
   },
   "ctrl+shift+i": {
     "ctrlKey": true,
@@ -436,9 +514,17 @@
     "key": "b"
   },
   "Command+Space": {
-    "metaKey": true,
-    "key": "space",
-    "code": " "
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "space",
+      "code": " "
+    }
   },
   "ctrl+k": {
     "ctrlKey": true,
@@ -503,18 +589,42 @@
     }
   },
   "Command+Shift+X": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "x"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "x"
+    }
   },
   "Alt+Command+K": {
-    "altKey": true,
-    "metaKey": true,
-    "key": "k"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "altKey": true,
+      "metaKey": true,
+      "key": "k"
+    }
   },
   "Command+W": {
-    "metaKey": true,
-    "key": "w"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "key": "w"
+    }
   },
   "ctrl+n": {
     "ctrlKey": true,
@@ -620,10 +730,32 @@
     "key": "c"
   },
   "Cmd+Option+Left": {
-    "metaKey": true,
-    "altKey": true,
-    "key": "left",
-    "code": "ArrowLeft"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "left",
+      "code": "ArrowLeft"
+    }
+  },
+  "Cmd+Option+Left": {
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "left",
+      "code": "ArrowLeft"
+    }
   },
   "space": {
     "key": "space",
@@ -636,9 +768,17 @@
     "key": "l"
   },
   "CMD+Alt+C": {
-    "metaKey": true,
-    "altKey": true,
-    "key": "c"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "metaKey": true,
+      "altKey": true,
+      "key": "c"
+    }
   },
   "ctrl+alt+h": {
     "ctrlKey": true,
@@ -676,10 +816,18 @@
     "key": "1"
   },
   "Ctrl+Alt+Cmd+F": {
-    "ctrlKey": true,
-    "altKey": true,
-    "metaKey": true,
-    "key": "f"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "altKey": true,
+      "metaKey": true,
+      "key": "f"
+    }
   },
   "volumeUp": {
     "key": "volumeup",
@@ -695,17 +843,33 @@
     "code": "Return"
   },
   "Command+Y": {
-    "metaKey": true,
-    "key": "y"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "key": "y"
+    }
   },
   "ctrl+o": {
     "ctrlKey": true,
     "key": "o"
   },
   "cmd+alt+k": {
-    "metaKey": true,
-    "altKey": true,
-    "key": "k"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "altKey": true,
+      "key": "k"
+    }
   },
   "ctrl+alt+a": {
     "ctrlKey": true,
@@ -755,13 +919,29 @@
     "key": "t"
   },
   "Command+Shift+1": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "1"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "1"
+    }
   },
   "Command+i": {
-    "metaKey": true,
-    "key": "i"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "key": "i"
+    }
   },
   "Shift+Alt+Enter": {
     "shiftKey": true,
@@ -815,9 +995,17 @@
     "code": "F4"
   },
   "Control+Command+S": {
-    "ctrlKey": true,
-    "metaKey": true,
-    "key": "s"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "ctrlKey": true,
+      "metaKey": true,
+      "key": "s"
+    }
   },
   "ctrl+shift+d": {
     "ctrlKey": true,
@@ -842,9 +1030,17 @@
     }
   },
   "Cmd+Alt+T": {
-    "metaKey": true,
-    "altKey": true,
-    "key": "t"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "altKey": true,
+      "key": "t"
+    }
   },
   "R": {
     "key": "r"
@@ -884,8 +1080,16 @@
     "code": "Escape"
   },
   "Command+O": {
-    "metaKey": true,
-    "key": "o"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "key": "o"
+    }
   },
   "ctrl+alt+Enter": {
     "ctrlKey": true,
@@ -895,9 +1099,17 @@
   },
 
   "Control+Command+g": {
-    "ctrlKey": true,
-    "metaKey": true,
-    "key": "g"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "ctrlKey": true,
+      "metaKey": true,
+      "key": "g"
+    }
   },
   "Ctrl+Space": {
     "ctrlKey": true,
@@ -905,10 +1117,18 @@
     "code": " "
   },
   "Command+Control+Alt+G": {
-    "metaKey": true,
-    "ctrlKey": true,
-    "altKey": true,
-    "key": "g"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "ctrlKey": true,
+      "altKey": true,
+      "key": "g"
+    }
   },
   "Control+W": {
     "ctrlKey": true,
@@ -919,13 +1139,29 @@
     "shiftKey": true
   },
   "command+q": {
-    "metaKey": true,
-    "key": "q"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "key": "q"
+    }
   },
   "command+shift+q": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "q"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "q"
+    }
   },
   "Alt+Z": {
     "altKey": true,
@@ -992,9 +1228,17 @@
     "code": "Return"
   },
   "Command+Left": {
-    "metaKey": true,
-    "key": "left",
-    "code": "ArrowLeft"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "key": "left",
+      "code": "ArrowLeft"
+    }
   },
   "Control+Shift+6": {
     "ctrlKey": true,
@@ -1039,9 +1283,17 @@
     "code": "ArrowUp"
   },
   "Command+Control+M": {
-    "metaKey": true,
-    "ctrlKey": true,
-    "key": "m"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "ctrlKey": true,
+      "key": "m"
+    }
   },
   "Shift+Ctrl+Alt+Super+6": {
     "shiftKey": true,
@@ -1092,9 +1344,17 @@
     "key": "e"
   },
   "Cmd+Ctrl+f": {
-    "metaKey": true,
-    "ctrlKey": true,
-    "key": "f"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "ctrlKey": true,
+      "key": "f"
+    }
   },
   "Ctrl+F12": {
     "ctrlKey": true,
@@ -1229,9 +1489,17 @@
     }
   },
   "Command+Shift+A": {
-    "metaKey": true,
-    "shiftKey": true,
-    "key": "a"
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin":{
+      "metaKey": true,
+      "shiftKey": true,
+      "key": "a"
+    }
   },
   "CommandOrControl+Z": {
     "linux": {

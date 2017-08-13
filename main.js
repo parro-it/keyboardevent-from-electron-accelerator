@@ -1,10 +1,15 @@
 const modifiers = /^(CommandOrControl|CmdOrCtrl|Command|Cmd|Control|Ctrl|Alt|Option|AltGr|Shift|Super)/i;
 const keyCodes = /^(Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen|F24|F23|F22|F21|F20|F19|F18|F17|F16|F15|F14|F13|F12|F11|F10|F9|F8|F7|F6|F5|F4|F3|F2|F1|[0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]'])/i;
+export const UNSUPPORTED = {};
 
 export function reduceModifier({accelerator, event}, modifier) {
 	switch (modifier) {
 		case 'command':
 		case 'cmd': {
+			if (process.platform !== 'darwin') {
+				return UNSUPPORTED;
+			}
+
 			if (event.metaKey) {
 				throw new Error('Double `Command` modifier specified.');
 			}
@@ -60,6 +65,10 @@ export function reduceModifier({accelerator, event}, modifier) {
 		case 'option':
 		case 'altgr':
 		case 'alt': {
+			if (modifier === 'option' && process.platform !== 'darwin') {
+				return UNSUPPORTED;
+			}
+
 			if (event.altKey) {
 				throw new Error('Double `Alt` modifier specified.');
 			}
@@ -154,6 +163,9 @@ export function toKeyEvent(accelerator) {
 		if (modifierMatch) {
 			const modifier = modifierMatch[0].toLowerCase();
 			state = reduceModifier(state, modifier);
+			if (state === UNSUPPORTED) {
+				return {unsupportedKeyForPlatform: true};
+			}
 		} else if (state.accelerator.trim()[0] === '+') {
 			state = reducePlus(state);
 		} else {
@@ -174,11 +186,4 @@ export function toKeyEvent(accelerator) {
 		}
 	}
 	return state.event;
-}
-
-export function match(accelerator, keyEvent) {
-	if (toKeyEvent(accelerator).code === keyEvent.code) {
-		return true;
-	}
-	return false;
 }

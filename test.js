@@ -1,6 +1,6 @@
 import fs from 'fs';
 import test from 'ava';
-import {reduceModifier, reducePlus, reduceKey, toKeyEvent} from '.';
+import {reduceModifier, reducePlus, reduceKey, toKeyEvent, UNSUPPORTED} from '.';
 
 const accelerators = JSON.parse(fs.readFileSync('./github-search-results.json', 'utf-8'));
 
@@ -21,6 +21,36 @@ test('ctrl+shift+v', t => {
 		shiftKey: true,
 		key: 'v'
 	});
+});
+
+test('Command shortcuts are not converted on Windows and Linux', t => {
+	const event = toKeyEvent('cmd+v');
+
+	if (process.platform === 'darwin') {
+		t.deepEqual(event, {
+			metaKey: true,
+			key: 'v'
+		});
+	} else {
+		t.deepEqual(event, {
+			unsupportedKeyForPlatform: true
+		});
+	}
+});
+
+test('Options shortcuts are not converted on Windows and Linux', t => {
+	const event = toKeyEvent('option+v');
+
+	if (process.platform === 'darwin') {
+		t.deepEqual(event, {
+			altKey: true,
+			key: 'v'
+		});
+	} else {
+		t.deepEqual(event, {
+			unsupportedKeyForPlatform: true
+		});
+	}
 });
 
 test('CmdOrCtrl+v', t => {
@@ -102,10 +132,14 @@ test('handle option', t => {
 		event: {}
 	}, 'option');
 
-	t.deepEqual(newState, {
-		accelerator: '+c',
-		event: {altKey: true}
-	});
+	if (process.platform === 'darwin') {
+		t.deepEqual(newState, {
+			accelerator: '+c',
+			event: {altKey: true}
+		});
+	} else {
+		t.is(newState, UNSUPPORTED);
+	}
 });
 
 test('handle shift', t => {
@@ -138,10 +172,14 @@ test('handle cmd', t => {
 		event: {}
 	}, 'cmd');
 
-	t.deepEqual(newState, {
-		accelerator: '+c',
-		event: {metaKey: true}
-	});
+	if (process.platform === 'darwin') {
+		t.deepEqual(newState, {
+			accelerator: '+c',
+			event: {metaKey: true}
+		});
+	} else {
+		t.is(newState, UNSUPPORTED);
+	}
 });
 
 test('handle command', t => {
@@ -150,19 +188,31 @@ test('handle command', t => {
 		event: {}
 	}, 'command');
 
-	t.deepEqual(newState, {
-		accelerator: '+c',
-		event: {metaKey: true}
-	});
+	if (process.platform === 'darwin') {
+		t.deepEqual(newState, {
+			accelerator: '+c',
+			event: {metaKey: true}
+		});
+	} else {
+		t.is(newState, UNSUPPORTED);
+	}
 });
 
 test('throw with double command', t => {
-	const err = t.throws(() => reduceModifier({
-		accelerator: 'command+c',
-		event: {metaKey: true}
-	}, 'command'));
+	if (process.platform === 'darwin') {
+		const err = t.throws(() => reduceModifier({
+			accelerator: 'command+c',
+			event: {metaKey: true}
+		}, 'command'));
 
-	t.is(err.message, 'Double `Command` modifier specified.');
+		t.is(err.message, 'Double `Command` modifier specified.');
+	} else {
+		const newState = reduceModifier({
+			accelerator: 'command+c',
+			event: {metaKey: true}
+		}, 'command');
+		t.is(newState, UNSUPPORTED);
+	}
 });
 
 test('throw with double alt', t => {
