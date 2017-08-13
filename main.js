@@ -102,6 +102,9 @@ export function reducePlus({accelerator, event}) {
 }
 
 export function reduceKey({accelerator, event}, key) {
+	if (key.length > 1 || event.key) {
+		throw new Error(`Unvalid keycode \`${key}\`.`);
+	}
 	return {
 		event: Object.assign({}, event, {key}),
 		accelerator: accelerator.trim().slice(key.length)

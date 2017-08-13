@@ -362,9 +362,17 @@
     "shiftKey": true,
     "key": "1"
   },
-  "Comamnd+Shift+F": {
-    "key": "f",
-    "shiftKey": true
+  "Command+Shift+F": {
+    "linux": {
+      "unsupportedKeyForPlatform": true
+    },
+    "win32": {
+      "unsupportedKeyForPlatform": true
+    },
+    "darwin": {
+      "key": "f",
+      "shiftKey": true
+    }
   },
   "ctrl+shift+2": {
     "ctrlKey": true,

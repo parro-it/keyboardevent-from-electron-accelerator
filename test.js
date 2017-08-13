@@ -198,6 +198,11 @@ test('handle command', t => {
 	}
 });
 
+test('Throw for multi-chars keycode that are not valid DOM KeyValues', t => {
+	const err = t.throws(() => toKeyEvent('ctrl+cs'));
+	t.is(err.message, 'Unvalid keycode `s`.');
+});
+
 test('throw with double command', t => {
 	if (process.platform === 'darwin') {
 		const err = t.throws(() => reduceModifier({
