@@ -371,7 +371,7 @@
     },
     "darwin": {
       "key": "f",
-      "metaKey": true
+      "metaKey": true,
       "shiftKey": true
     }
   },
