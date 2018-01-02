@@ -101,13 +101,69 @@ export function reducePlus({accelerator, event}) {
 	};
 }
 
+const virtualKeyCodes = {
+	0: 'Digit0',
+	1: 'Digit1',
+	2: 'Digit2',
+	3: 'Digit3',
+	4: 'Digit4',
+	5: 'Digit5',
+	6: 'Digit6',
+	7: 'Digit7',
+	8: 'Digit8',
+	9: 'Digit9',
+	'-': 'Minus',
+	'=': 'Equal',
+	Q: 'KeyQ',
+	W: 'KeyW',
+	E: 'KeyE',
+	R: 'KeyR',
+	T: 'KeyT',
+	Y: 'KeyY',
+	U: 'KeyU',
+	I: 'KeyI',
+	O: 'KeyO',
+	P: 'KeyP',
+	'[': 'BracketLeft',
+	']': 'BracketRight',
+	A: 'KeyA',
+	S: 'KeyS',
+	D: 'KeyD',
+	F: 'KeyF',
+	G: 'KeyG',
+	H: 'KeyH',
+	J: 'KeyJ',
+	K: 'KeyK',
+	L: 'KeyL',
+	';': 'Semicolon',
+	'\'': 'Quote',
+	'`': 'Backquote',
+	'/': 'Backslash',
+	Z: 'KeyZ',
+	X: 'KeyX',
+	C: 'KeyC',
+	V: 'KeyV',
+	B: 'KeyB',
+	N: 'KeyN',
+	M: 'KeyM',
+	',': 'Comma',
+	'.': 'Period',
+	'\\': 'Slash',
+	' ': 'Space'
+};
+
 export function reduceKey({accelerator, event}, key) {
 	if (key.length > 1 || event.key) {
 		throw new Error(`Unvalid keycode \`${key}\`.`);
 	}
 
+	const code =
+		key.toUpperCase() in virtualKeyCodes ?
+			virtualKeyCodes[key.toUpperCase()] :
+			null;
+
 	return {
-		event: Object.assign({}, event, {key}),
+		event: Object.assign({}, event, {key}, code ? {code} : null),
 		accelerator: accelerator.trim().slice(key.length)
 	};
 }

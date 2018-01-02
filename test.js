@@ -1,8 +1,16 @@
 import fs from 'fs';
 import test from 'ava';
-import {reduceModifier, reducePlus, reduceKey, toKeyEvent, UNSUPPORTED} from '.';
+import {
+	reduceModifier,
+	reducePlus,
+	reduceKey,
+	toKeyEvent,
+	UNSUPPORTED
+} from '.';
 
-const accelerators = JSON.parse(fs.readFileSync('./github-search-results.json', 'utf-8'));
+const accelerators = JSON.parse(
+	fs.readFileSync('./github-search-results.json', 'utf-8')
+);
 
 test('VolumeUp', t => {
 	const event = toKeyEvent('VolumeUp');
@@ -19,7 +27,8 @@ test('ctrl+shift+v', t => {
 	t.deepEqual(event, {
 		ctrlKey: true,
 		shiftKey: true,
-		key: 'v'
+		key: 'v',
+		code: 'KeyV'
 	});
 });
 
@@ -58,12 +67,14 @@ test('CmdOrCtrl+v', t => {
 	if (process.platform === 'darwin') {
 		t.deepEqual(event, {
 			metaKey: true,
-			key: 'v'
+			key: 'v',
+			code: 'KeyV'
 		});
 	} else {
 		t.deepEqual(event, {
 			ctrlKey: true,
-			key: 'v'
+			key: 'v',
+			code: 'KeyV'
 		});
 	}
 });
@@ -91,10 +102,13 @@ test('Control+Alt+Delete', t => {
 });
 
 test('handle ctrl', t => {
-	const newState = reduceModifier({
-		accelerator: 'ctrl+c',
-		event: {}
-	}, 'ctrl');
+	const newState = reduceModifier(
+		{
+			accelerator: 'ctrl+c',
+			event: {}
+		},
+		'ctrl'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
@@ -103,10 +117,13 @@ test('handle ctrl', t => {
 });
 
 test('handle alt', t => {
-	const newState = reduceModifier({
-		accelerator: 'alt+c',
-		event: {}
-	}, 'alt');
+	const newState = reduceModifier(
+		{
+			accelerator: 'alt+c',
+			event: {}
+		},
+		'alt'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
@@ -115,10 +132,13 @@ test('handle alt', t => {
 });
 
 test('handle altgr', t => {
-	const newState = reduceModifier({
-		accelerator: 'altgr+c',
-		event: {}
-	}, 'altgr');
+	const newState = reduceModifier(
+		{
+			accelerator: 'altgr+c',
+			event: {}
+		},
+		'altgr'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
@@ -127,10 +147,13 @@ test('handle altgr', t => {
 });
 
 test('handle option', t => {
-	const newState = reduceModifier({
-		accelerator: 'option+c',
-		event: {}
-	}, 'option');
+	const newState = reduceModifier(
+		{
+			accelerator: 'option+c',
+			event: {}
+		},
+		'option'
+	);
 
 	if (process.platform === 'darwin') {
 		t.deepEqual(newState, {
@@ -143,10 +166,13 @@ test('handle option', t => {
 });
 
 test('handle shift', t => {
-	const newState = reduceModifier({
-		accelerator: 'shift+c',
-		event: {}
-	}, 'shift');
+	const newState = reduceModifier(
+		{
+			accelerator: 'shift+c',
+			event: {}
+		},
+		'shift'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
@@ -155,10 +181,13 @@ test('handle shift', t => {
 });
 
 test('handle control', t => {
-	const newState = reduceModifier({
-		accelerator: 'control+c',
-		event: {}
-	}, 'control');
+	const newState = reduceModifier(
+		{
+			accelerator: 'control+c',
+			event: {}
+		},
+		'control'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: '+c',
@@ -167,10 +196,13 @@ test('handle control', t => {
 });
 
 test('handle cmd', t => {
-	const newState = reduceModifier({
-		accelerator: 'cmd+c',
-		event: {}
-	}, 'cmd');
+	const newState = reduceModifier(
+		{
+			accelerator: 'cmd+c',
+			event: {}
+		},
+		'cmd'
+	);
 
 	if (process.platform === 'darwin') {
 		t.deepEqual(newState, {
@@ -183,10 +215,13 @@ test('handle cmd', t => {
 });
 
 test('handle command', t => {
-	const newState = reduceModifier({
-		accelerator: 'command+c',
-		event: {}
-	}, 'command');
+	const newState = reduceModifier(
+		{
+			accelerator: 'command+c',
+			event: {}
+		},
+		'command'
+	);
 
 	if (process.platform === 'darwin') {
 		t.deepEqual(newState, {
@@ -210,54 +245,80 @@ test('Throw for multiples keycodes', t => {
 
 test('throw with double command', t => {
 	if (process.platform === 'darwin') {
-		const err = t.throws(() => reduceModifier({
-			accelerator: 'command+c',
-			event: {metaKey: true}
-		}, 'command'));
+		const err = t.throws(() =>
+			reduceModifier(
+				{
+					accelerator: 'command+c',
+					event: {metaKey: true}
+				},
+				'command'
+			)
+		);
 
 		t.is(err.message, 'Double `Command` modifier specified.');
 	} else {
-		const newState = reduceModifier({
-			accelerator: 'command+c',
-			event: {metaKey: true}
-		}, 'command');
+		const newState = reduceModifier(
+			{
+				accelerator: 'command+c',
+				event: {metaKey: true}
+			},
+			'command'
+		);
 		t.is(newState, UNSUPPORTED);
 	}
 });
 
 test('throw with double alt', t => {
-	const err = t.throws(() => reduceModifier({
-		accelerator: 'alt+c',
-		event: {altKey: true}
-	}, 'alt'));
+	const err = t.throws(() =>
+		reduceModifier(
+			{
+				accelerator: 'alt+c',
+				event: {altKey: true}
+			},
+			'alt'
+		)
+	);
 
 	t.is(err.message, 'Double `Alt` modifier specified.');
 });
 
 test('throw with double shift', t => {
-	const err = t.throws(() => reduceModifier({
-		accelerator: 'shift+c',
-		event: {shiftKey: true}
-	}, 'shift'));
+	const err = t.throws(() =>
+		reduceModifier(
+			{
+				accelerator: 'shift+c',
+				event: {shiftKey: true}
+			},
+			'shift'
+		)
+	);
 
 	t.is(err.message, 'Double `Shift` modifier specified.');
 });
 
 test('throw with double control', t => {
-	const err = t.throws(() => reduceModifier({
-		accelerator: 'ctrl+c',
-		event: {ctrlKey: true}
-	}, 'ctrl'));
+	const err = t.throws(() =>
+		reduceModifier(
+			{
+				accelerator: 'ctrl+c',
+				event: {ctrlKey: true}
+			},
+			'ctrl'
+		)
+	);
 
 	t.is(err.message, 'Double `Control` modifier specified.');
 });
 
 test('handle plus', t => {
 	const event = {};
-	const newState = reducePlus({
-		accelerator: '+c',
-		event
-	}, 'control');
+	const newState = reducePlus(
+		{
+			accelerator: '+c',
+			event
+		},
+		'control'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: 'c',
@@ -267,14 +328,20 @@ test('handle plus', t => {
 });
 
 test('handle keyCode', t => {
-	const newState = reduceKey({
-		accelerator: 'c',
-		event: {}
-	}, 'c');
+	const newState = reduceKey(
+		{
+			accelerator: 'c',
+			event: {}
+		},
+		'c'
+	);
 
 	t.deepEqual(newState, {
 		accelerator: '',
-		event: {key: 'c'}
+		event: {
+			key: 'c',
+			code: 'KeyC'
+		}
 	});
 });
 
@@ -283,22 +350,34 @@ const res = {};
 let i = 0;
 */
 
-Object.keys(accelerators).forEach(accelerator => test(`Convert ${accelerator}`, t => {
-	const ev = toKeyEvent(accelerator);
-	/* Used to generate fixture
+Object.keys(accelerators).forEach(accelerator =>
+	test(`Convert ${accelerator}`, t => {
+		const ev = toKeyEvent(accelerator);
+		/* Used to generate fixture
 	res[accelerator] = ev;
 	i++;
 	if (i === accelerators.length) {
 		console.log(JSON.stringify(res, null, '\t').slice(1, -1) + ',');
 	}
 	*/
-	const acc = accelerators[accelerator];
-	const expected = hasOSCustomResult(acc) ? acc[process.platform] : acc;
-	t.deepEqual(ev, expected);
-}));
+		// t.is(typeof ev.code, "string");
+		if (
+			ev.code &&
+			(ev.code.startsWith('Digit') || ev.code.startsWith('Key'))
+		) {
+			delete ev.code;
+		}
+
+		const acc = accelerators[accelerator];
+		const expected = hasOSCustomResult(acc) ? acc[process.platform] : acc;
+		t.deepEqual(ev, expected);
+	})
+);
 
 function hasOSCustomResult(expected) {
-	return Reflect.has(expected, 'linux') ||
+	return (
+		Reflect.has(expected, 'linux') ||
 		Reflect.has(expected, 'darwin') ||
-		Reflect.has(expected, 'win32');
+		Reflect.has(expected, 'win32')
+	);
 }
