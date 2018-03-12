@@ -38,7 +38,8 @@ test('Command shortcuts are not converted on Windows and Linux', t => {
 	if (process.platform === 'darwin') {
 		t.deepEqual(event, {
 			metaKey: true,
-			key: 'v'
+			key: 'v',
+			code: 'KeyV'
 		});
 	} else {
 		t.deepEqual(event, {
@@ -53,7 +54,8 @@ test('Options shortcuts are not converted on Windows and Linux', t => {
 	if (process.platform === 'darwin') {
 		t.deepEqual(event, {
 			altKey: true,
-			key: 'v'
+			key: 'v',
+			code: 'KeyV'
 		});
 	} else {
 		t.deepEqual(event, {
