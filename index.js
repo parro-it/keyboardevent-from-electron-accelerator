@@ -1,92 +1,121 @@
 const modifiers = /^(CommandOrControl|CmdOrCtrl|Command|Cmd|Control|Ctrl|AltGr|Option|Alt|Shift|Super)/i;
 const keyCodes = /^(Plus|Space|Tab|Backspace|Delete|Insert|Return|Enter|Up|Down|Left|Right|Home|End|PageUp|PageDown|Escape|Esc|VolumeUp|VolumeDown|VolumeMute|MediaNextTrack|MediaPreviousTrack|MediaStop|MediaPlayPause|PrintScreen|F24|F23|F22|F21|F20|F19|F18|F17|F16|F15|F14|F13|F12|F11|F10|F9|F8|F7|F6|F5|F4|F3|F2|F1|[0-9A-Z)!@#$%^&*(:+<_>?~{|}";=,\-./`[\\\]'])/i;
-export const UNSUPPORTED = {};
+const UNSUPPORTED = {};
 
-export function reduceModifier({accelerator, event}, modifier) {
+function _command(accelerator, event, modifier) {
+	if (process.platform !== 'darwin') {
+		return UNSUPPORTED;
+	}
+
+	if (event.metaKey) {
+		throw new Error('Double `Command` modifier specified.');
+	}
+
+	return {
+		event: Object.assign({}, event, {metaKey: true}),
+		accelerator: accelerator.slice(modifier.length)
+	};
+}
+
+function _super(accelerator, event, modifier) {
+	if (event.metaKey) {
+		throw new Error('Double `Super` modifier specified.');
+	}
+
+	return {
+		event: Object.assign({}, event, {metaKey: true}),
+		accelerator: accelerator.slice(modifier.length)
+	};
+}
+
+function _commandorcontrol(accelerator, event, modifier) {
+	if (process.platform === 'darwin') {
+		if (event.metaKey) {
+			throw new Error('Double `Command` modifier specified.');
+		}
+
+		return {
+			event: Object.assign({}, event, {metaKey: true}),
+			accelerator: accelerator.slice(modifier.length)
+		};
+	}
+
+	if (event.ctrlKey) {
+		throw new Error('Double `Control` modifier specified.');
+	}
+
+	return {
+		event: Object.assign({}, event, {ctrlKey: true}),
+		accelerator: accelerator.slice(modifier.length)
+	};
+}
+
+function _alt(accelerator, event, modifier) {
+	if (modifier === 'option' && process.platform !== 'darwin') {
+		return UNSUPPORTED;
+	}
+
+	if (event.altKey) {
+		throw new Error('Double `Alt` modifier specified.');
+	}
+
+	return {
+		event: Object.assign({}, event, {altKey: true}),
+		accelerator: accelerator.slice(modifier.length)
+	};
+}
+
+function _shift(accelerator, event, modifier) {
+	if (event.shiftKey) {
+		throw new Error('Double `Shift` modifier specified.');
+	}
+
+	return {
+		event: Object.assign({}, event, {shiftKey: true}),
+		accelerator: accelerator.slice(modifier.length)
+	};
+}
+
+function _control(accelerator, event, modifier) {
+	if (event.ctrlKey) {
+		throw new Error('Double `Control` modifier specified.');
+	}
+
+	return {
+		event: Object.assign({}, event, {ctrlKey: true}),
+		accelerator: accelerator.slice(modifier.length)
+	};
+}
+
+function reduceModifier({accelerator, event}, modifier) {
 	switch (modifier) {
 		case 'command':
 		case 'cmd': {
-			if (process.platform !== 'darwin') {
-				return UNSUPPORTED;
-			}
-
-			if (event.metaKey) {
-				throw new Error('Double `Command` modifier specified.');
-			}
-
-			return {
-				event: Object.assign({}, event, {metaKey: true}),
-				accelerator: accelerator.slice(modifier.length)
-			};
+			return _command(accelerator, event, modifier);
 		}
+
 		case 'super': {
-			if (event.metaKey) {
-				throw new Error('Double `Super` modifier specified.');
-			}
-
-			return {
-				event: Object.assign({}, event, {metaKey: true}),
-				accelerator: accelerator.slice(modifier.length)
-			};
+			return _super(accelerator, event, modifier);
 		}
+
 		case 'control':
 		case 'ctrl': {
-			if (event.ctrlKey) {
-				throw new Error('Double `Control` modifier specified.');
-			}
-
-			return {
-				event: Object.assign({}, event, {ctrlKey: true}),
-				accelerator: accelerator.slice(modifier.length)
-			};
+			return _control(accelerator, event, modifier);
 		}
+
 		case 'commandorcontrol':
 		case 'cmdorctrl': {
-			if (process.platform === 'darwin') {
-				if (event.metaKey) {
-					throw new Error('Double `Command` modifier specified.');
-				}
-
-				return {
-					event: Object.assign({}, event, {metaKey: true}),
-					accelerator: accelerator.slice(modifier.length)
-				};
-			}
-
-			if (event.ctrlKey) {
-				throw new Error('Double `Control` modifier specified.');
-			}
-
-			return {
-				event: Object.assign({}, event, {ctrlKey: true}),
-				accelerator: accelerator.slice(modifier.length)
-			};
+			return _commandorcontrol(accelerator, event, modifier);
 		}
+
 		case 'option':
 		case 'altgr':
 		case 'alt': {
-			if (modifier === 'option' && process.platform !== 'darwin') {
-				return UNSUPPORTED;
-			}
-
-			if (event.altKey) {
-				throw new Error('Double `Alt` modifier specified.');
-			}
-
-			return {
-				event: Object.assign({}, event, {altKey: true}),
-				accelerator: accelerator.slice(modifier.length)
-			};
+			return _alt(accelerator, event, modifier);
 		}
-		case 'shift': {
-			if (event.shiftKey) {
-				throw new Error('Double `Shift` modifier specified.');
-			}
 
-			return {
-				event: Object.assign({}, event, {shiftKey: true}),
-				accelerator: accelerator.slice(modifier.length)
-			};
+		case 'shift': {
+			return _shift(accelerator, event, modifier);
 		}
 
 		default:
@@ -94,7 +123,7 @@ export function reduceModifier({accelerator, event}, modifier) {
 	}
 }
 
-export function reducePlus({accelerator, event}) {
+function reducePlus({accelerator, event}) {
 	return {
 		event,
 		accelerator: accelerator.trim().slice(1)
@@ -152,7 +181,7 @@ const virtualKeyCodes = {
 	' ': 'Space'
 };
 
-export function reduceKey({accelerator, event}, key) {
+function reduceKey({accelerator, event}, key) {
 	if (key.length > 1 || event.key) {
 		throw new Error(`Unvalid keycode \`${key}\`.`);
 	}
@@ -202,7 +231,7 @@ for (let i = 1; i <= 24; i++) {
 	domKeys[`f${i}`] = `F${i}`;
 }
 
-export function reduceCode({accelerator, event}, {code, key}) {
+function reduceCode({accelerator, event}, {code, key}) {
 	if (event.code) {
 		throw new Error(`Duplicated keycode \`${key}\`.`);
 	}
@@ -220,7 +249,7 @@ export function reduceCode({accelerator, event}, {code, key}) {
  * @param  {string} accelerator an Electron Accelerator string, e.g. `Ctrl+C` or `Shift+Space`.
  * @return {object} a DOM KeyboardEvent object derivate from the `accelerator` argument.
  */
-export function toKeyEvent(accelerator) {
+function toKeyEvent(accelerator) {
 	let state = {accelerator, event: {}};
 	while (state.accelerator !== '') {
 		const modifierMatch = state.accelerator.match(modifiers);
@@ -249,5 +278,15 @@ export function toKeyEvent(accelerator) {
 			}
 		}
 	}
+
 	return state.event;
 }
+
+module.exports = {
+	UNSUPPORTED,
+	reduceModifier,
+	reducePlus,
+	reduceKey,
+	reduceCode,
+	toKeyEvent
+};
