@@ -190,7 +190,7 @@
   "Alt+Space": {
     "altKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
 
 
@@ -277,14 +277,14 @@
     "ctrlKey": true,
     "shiftKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
 
   "ctrl+shift+space": {
     "ctrlKey": true,
     "shiftKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "alt+s": {
     "altKey": true,
@@ -397,7 +397,7 @@
   "ctrl+space": {
     "ctrlKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
 
 
@@ -445,7 +445,7 @@
       "metaKey": true,
       "shiftKey": true,
       "key": "space",
-      "code": " "
+      "code": "Space"
     }
   },
 
@@ -532,7 +532,7 @@
     "darwin": {
       "metaKey": true,
       "key": "space",
-      "code": " "
+      "code": "Space"
     }
   },
   "ctrl+k": {
@@ -559,7 +559,7 @@
     "ctrlKey": true,
     "shiftKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "shift+alt+v": {
     "shiftKey": true,
@@ -646,7 +646,7 @@
   "Control+Space": {
     "ctrlKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "CommandOrControl+H": {
     "linux": {
@@ -726,7 +726,7 @@
   },
   "Space": {
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "ctrl+alt+r": {
     "ctrlKey": true,
@@ -768,7 +768,7 @@
   },
   "space": {
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "h": {
     "key": "h"
@@ -962,7 +962,7 @@
     "shiftKey": true,
     "altKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "ctrl+alt+m": {
     "ctrlKey": true,
@@ -1123,7 +1123,7 @@
   "Ctrl+Space": {
     "ctrlKey": true,
     "key": "space",
-    "code": " "
+    "code": "Space"
   },
   "Command+Control+Alt+G": {
     "linux": {

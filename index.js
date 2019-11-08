@@ -199,7 +199,7 @@ function reduceKey({accelerator, event}, key) {
 
 const domKeys = Object.assign(Object.create(null), {
 	plus: 'Add',
-	space: ' ',
+	space: 'Space',
 	tab: 'Tab',
 	backspace: 'Backspace',
 	delete: 'Delete',

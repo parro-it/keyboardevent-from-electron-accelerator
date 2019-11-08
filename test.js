@@ -21,6 +21,15 @@ test('VolumeUp', t => {
 	});
 });
 
+test('Space', t => {
+	const event = toKeyEvent('Space');
+
+	t.deepEqual(event, {
+		code: 'Space',
+		key: 'space'
+	});
+});
+
 test('ctrl+shift+v', t => {
 	const event = toKeyEvent('ctrl+shift+v');
 
